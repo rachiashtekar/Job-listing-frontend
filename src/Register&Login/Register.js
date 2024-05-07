@@ -2,22 +2,25 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import React, { useState } from "react";
-import "./Register.css"
+import "./Register.css";
 
 const Register = () => {
   const [name, setName] = useState("");
-
   const [email, setEmail] = useState("");
-
   const [password, setPassword] = useState("");
-
   const [phone, setPhone] = useState("");
-
   const navigate = useNavigate();
 
   // handle register
   const handleRegister = async (e) => {
     e.preventDefault();
+
+    // Validate inputs
+    if (!name || !email || !password || !phone) {
+      toast.error("Please fill in all fields");
+      return;
+    }
+
     try {
       const response = await axios.post(`http://localhost:3002/api/v1/auth/register`, {
         name,
@@ -80,10 +83,7 @@ const Register = () => {
         </div>
         <div className="register-text">
           Already have an account?
-          <span
-            onClick = {() => navigate("/login")}>
-            Login
-          </span>
+          <span onClick={() => navigate("/login")}>Login</span>
         </div>
       </div>
     </>
@@ -91,3 +91,4 @@ const Register = () => {
 };
 
 export default Register;
+
