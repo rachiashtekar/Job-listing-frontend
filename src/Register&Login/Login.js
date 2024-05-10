@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "./Login.css";
+// import {loginImage} from "../../assets/login-image.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
@@ -42,11 +44,11 @@ function Login() {
   return (
     <div>
       <>
-        <div className="containerr">
+        <div className="container">
           <div className="forms">
             <div className="form-content">
               <div className="login-form">
-                <div className="title">Login</div>
+                <div className="title">Already have an account?</div>
 
                 <div className="input-boxes">
                   <div className="input-box">
@@ -69,8 +71,9 @@ function Login() {
 
                   <div className="button input-box">
                     <input
+                    id="login-button"
                       type="button"
-                      defaultValue="Login"
+                      defaultValue="Sign In"
                       onClick={handleLogin}
                     />
                   </div>
@@ -78,10 +81,10 @@ function Login() {
                   <div className="text sign-up-text">
                     Don't have an account?{" "}
                     <span
-                      style={{ color: "blue", cursor: "pointer" }}
+                      style={{ color: "black", cursor: "pointer",fontWeight:"bold" }}
                       onClick={() => navigate("/register")}
                     >
-                      Register Here
+                      SignIn
                     </span>
                   </div>
                 </div>
@@ -89,7 +92,11 @@ function Login() {
             </div>
           </div>
         </div>
+        
       </>
+      {/* <div>
+        <img src={`${loginImage}`} alt="login-web" />
+      </div> */}
     </div>
   );
 }

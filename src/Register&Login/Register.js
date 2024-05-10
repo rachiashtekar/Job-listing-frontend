@@ -41,7 +41,7 @@ const Register = () => {
   return (
     <>
       <div className="container">
-        <div className="title">Register Here</div>
+        <div className="title">Create an account</div>
         <div className="input-box">
           <input
             type="text"
@@ -76,14 +76,20 @@ const Register = () => {
         </div>
         <div className="button input-box">
           <input
+          id="register-button"
             type="button"
             defaultValue="Register"
             onClick={handleRegister}
           />
         </div>
+        <div>
+          <input type="checkbox" />
+          <label style={{fontSize:"10px",fontWeight:"bold"}}>By creating an account, I agree to our terms of use and privacy policy</label>
+       
+        </div>
         <div className="register-text">
           Already have an account?
-          <span onClick={() => navigate("/login")}>Login</span>
+          <span  style={{ color: "black", cursor: "pointer",fontWeight:"bold" }} onClick={() => navigate("/login")}>Login</span>
         </div>
       </div>
     </>

@@ -1,0 +1,26 @@
+.title{
+ font-style: "DM Sans";
+ font-weight: 700;
+ font-size: 25px;
+ text-align: left;
+ line-height: 57.61px;
+}
+
+.input-box{
+    padding: 5px;
+    
+}
+#login-button {
+    background: #ED5353;
+    color: white;
+    border: none;
+    height: 28px;
+    width: 80px;
+    border-radius: 5px;
+
+    
+    
+}
+.text{
+    font-size: 16px;
+}

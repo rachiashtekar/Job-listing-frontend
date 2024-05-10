@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
-// import "./EditJob.css";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import toast from "react-hot-toast";
+import toast, { Toaster } from 'react-hot-toast';
+import "./EditJob.css"
 
 const EditJob = () => {
   const navigate = useNavigate();
   const { id } = useParams();
-  console.log("id", id);
   const [companyName, setCompanyName] = useState("");
   const [jobPosition, setJobPosition] = useState("");
   const [monthlySalary, setMonthlySalary] = useState("");
@@ -138,9 +137,8 @@ const EditJob = () => {
 
   return (
     <div className="edit__job">
-        
-      <div className="edit__job__left">
-        <h1>Edit Job</h1>
+         <div className="edit__job__left">
+        <h2>Edit Job</h2>
         <form className="job__form" onSubmit={handleSubmit}>
           <div className="job__input">
             <label htmlFor="companyName">Company Name</label>
@@ -236,7 +234,7 @@ const EditJob = () => {
       <div className="edit__job__right">
         <h1>Recruiters edit Job details here</h1>
       </div>
-   
+      <Toaster />
     </div>
   );
 };

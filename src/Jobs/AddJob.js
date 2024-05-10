@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-// import "./AddJob.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import toast from "react-hot-toast";
-
-// import useJobContext from "../../hooks/useJobContext";
-
+import toast, { Toaster } from "react-hot-toast";
+import "./AddJob.css"
 const AddJob = () => {
   const [companyName, setCompanyName] = useState("");
   const [jobPosition, setJobPosition] = useState("");
@@ -17,17 +14,12 @@ const AddJob = () => {
   const [aboutCompany, setAboutCompany] = useState("");
   const [skillsRequired, setSkillsRequired] = useState([]);
 
-  // const { loggedIn } = useJobContext();
-
   const navigate = useNavigate();
-
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Prepare the data to be sent in the POST request
+// Prepare the data to be sent in the POST request
     const postData = {
       companyName,
-
       jobPosition,
       monthlySalary,
       jobType,
@@ -43,7 +35,7 @@ const AddJob = () => {
     axios
       .post(`http://localhost:3002/api/v1/job/job-posting`, postData, {
         headers: {
-          Authorization: "Bearer " + localStorage.getItem("token"),
+          Authorization: localStorage.getItem("token"),
         },
       })
       .then((response) => {
@@ -89,14 +81,12 @@ const AddJob = () => {
             autoClose: 2000,
           });
         }
-
         console.error("Job posting failed", error);
         // Handle any error response if needed
       });
     console.log(postData);
   };
-
-  const handleJobTypeChange = (e) => {
+ const handleJobTypeChange = (e) => {
     setJobType(e.target.value);
   };
 
@@ -108,6 +98,7 @@ const AddJob = () => {
     const skills = e.target.value.split(",").map((skill) => skill);
     setSkillsRequired(skills);
   };
+  
 
   const cancelAddJob = () => {
     toast.error("Job posting cancelled!", {
@@ -121,8 +112,9 @@ const AddJob = () => {
 
   return (
     <div className="add__job">
+      <Toaster />
       <div className="add__job__left">
-        <h1>Add Job</h1>
+        <h2>Add Job</h2>
         <form className="job__form" onSubmit={handleSubmit}>
           <div className="job__input">
             <label htmlFor="companyName">Company Name</label>
@@ -210,14 +202,12 @@ const AddJob = () => {
               Cancel
             </button>
             <button type="submit" className="add__job__button">
-              + Add Job
+               Add Job
             </button>
           </div>
         </form>
       </div>
-      <div className="add__job__right">
-        <h1>Recruiters add Job details here</h1>
-      </div>
+      
     </div>
   );
 };
