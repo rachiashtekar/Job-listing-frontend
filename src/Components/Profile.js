@@ -42,7 +42,7 @@ console.log(response.data)
         <p>Loading...</p>
       ) : user ? (
         <div>
-        <img src={user.image} alt="image" />
+        {/* <img src={user.image} alt="image" /> */}
           <p>Name: {user.name}</p>
           <p>Email: {user.email}</p>
           <p>Phone: {user.phone}</p>
