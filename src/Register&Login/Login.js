@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import "./Login.css";
-// import {loginImage} from "../../assets/login-image.png";
+// import {loginImage} from "../../src/assets/userpage.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 function Login() {
-    const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("");
 
-    const [password, setPassword] = useState("");
+  const [password, setPassword] = useState("");
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleLogin = async () => {
-    
     try {
       const response = await axios.post(
         `http://localhost:3002/api/v1/auth/login`,
@@ -71,7 +70,7 @@ function Login() {
 
                   <div className="button input-box">
                     <input
-                    id="login-button"
+                      id="login-button"
                       type="button"
                       defaultValue="Sign In"
                       onClick={handleLogin}
@@ -81,7 +80,11 @@ function Login() {
                   <div className="text sign-up-text">
                     Don't have an account?{" "}
                     <span
-                      style={{ color: "black", cursor: "pointer",fontWeight:"bold" }}
+                      style={{
+                        color: "black",
+                        cursor: "pointer",
+                        fontWeight: "bold",
+                      }}
                       onClick={() => navigate("/register")}
                     >
                       SignIn
@@ -92,7 +95,6 @@ function Login() {
             </div>
           </div>
         </div>
-        
       </>
       {/* <div>
         <img src={`${loginImage}`} alt="login-web" />

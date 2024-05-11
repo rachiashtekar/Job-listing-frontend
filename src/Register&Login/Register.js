@@ -9,6 +9,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
+  // const [image,setImage] = useState(null)
   const navigate = useNavigate();
 
   // handle register
@@ -37,11 +38,25 @@ const Register = () => {
       toast.error("Account not created");
     }
   };
+  // Handle image upload
+  // const handleImageUpload = (e) => {
+  //   const file = e.target.files[0];
+  //   setImage(file);
+  // };
 
   return (
     <>
       <div className="container">
         <div className="title">Create an account</div>
+        {/* <div className="input-box">
+          <input
+             placeholder="Enter your image here"
+            
+            type="file"
+            accept="image/*"
+            onChange={handleImageUpload}
+          />
+        </div> */}
         <div className="input-box">
           <input
             type="text"

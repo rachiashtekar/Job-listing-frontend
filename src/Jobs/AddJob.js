@@ -207,6 +207,9 @@ const AddJob = () => {
           </div>
         </form>
       </div>
+      <div className="add__job__right">
+        <h1>Recruiters add Job details here</h1>
+      </div>
       
     </div>
   );

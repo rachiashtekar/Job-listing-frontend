@@ -21,7 +21,7 @@
   }
   
   .add__job__right {
-    /* background-image: url("../../assets/addJobPage//addJob.png"); */
+    background-image: url("../../src/assets/addJob.png");
     height: 100vh;
     width: 45vw;
     color: white;
