@@ -9,7 +9,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
-  // const [image,setImage] = useState(null)
+  const [image,setImage] = useState(null)
   const navigate = useNavigate();
 
   // handle register
@@ -17,7 +17,7 @@ const Register = () => {
     e.preventDefault();
 
     // Validate inputs
-    if (!name || !email || !password || !phone) {
+    if (!name || !email || !password || !phone || !image) {
       toast.error("Please fill in all fields");
       return;
     }
@@ -28,6 +28,7 @@ const Register = () => {
         email,
         password,
         phone,
+        image
       });
       if (response && response.data.success)
         toast.success("Account created successfully");
@@ -35,20 +36,22 @@ const Register = () => {
       navigate("/login");
     } catch (error) {
       console.log(error);
+       
       toast.error("Account not created");
     }
   };
-  // Handle image upload
-  // const handleImageUpload = (e) => {
-  //   const file = e.target.files[0];
-  //   setImage(file);
-  // };
+ // Handleimage upload
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    setImage(file);
+  };
+  console.log(image)
 
   return (
     <>
       <div className="container">
         <div className="title">Create an account</div>
-        {/* <div className="input-box">
+        <div className="input-box">
           <input
              placeholder="Enter your image here"
             
@@ -56,7 +59,7 @@ const Register = () => {
             accept="image/*"
             onChange={handleImageUpload}
           />
-        </div> */}
+        </div>
         <div className="input-box">
           <input
             type="text"

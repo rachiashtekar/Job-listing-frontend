@@ -21,7 +21,20 @@ function Login() {
         }
       );
 
-      localStorage.setItem("token", response.data.token);
+      //    const result = response.data.success
+      //    if(result===false?nevigate(/login):
+      // localStorage.setItem("token", response.data.token);
+
+      const success = response.data.success;
+
+      if (!success) {
+        toast.error("Incorrect email or password");
+        navigate("/login"); // Redirect to login page
+      } else {
+        localStorage.setItem("token", response.data.token);
+        toast.success("Login successful");
+        navigate("/"); // Redirect to home page
+      }
 
       // Handle successful login
       // console.log('Login successful', response.data);

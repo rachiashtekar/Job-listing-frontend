@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./Profile.css"
 
 const Profile = () => {
   const [user, setUser] = useState(null);
+  const [jobListings, setJobListings] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -13,9 +15,8 @@ const Profile = () => {
         if (!token) {
           throw new Error("No token found");
         }
-        console.log(token);
 
-        const response = await axios.get(
+        const userResponse = await axios.get(
           `http://localhost:3002/api/v1/auth/profile`,
           {
             headers: {
@@ -23,8 +24,11 @@ const Profile = () => {
             },
           }
         );
-console.log(response.data)
-        setUser(response.data);
+
+        setUser(userResponse.data);
+
+        setJobListings(userResponse.data.jobListings);
+
         setLoading(false);
       } catch (error) {
         console.error("Error fetching user profile:", error);
@@ -42,10 +46,34 @@ console.log(response.data)
         <p>Loading...</p>
       ) : user ? (
         <div>
-        {/* <img src={user.image} alt="image" /> */}
+          <img
+            src={user.image}
+            alt="profile-pic"
+            onError={(e) => console.error("Image load error:", e)}
+          />
           <p>Name: {user.name}</p>
           <p>Email: {user.email}</p>
           <p>Phone: {user.phone}</p>
+          <h2>Job Listings</h2>
+          {jobListings.length > 0 ? (
+            <ul>
+              {jobListings.map((job) => (
+                <li key={job._id}>
+                  <p>CompanyName:{job.companyName}</p>
+                  <p>Job Position: {job.jobPosition}</p>
+                  <p>Monthly Salary:{job.monthlySalary}</p>
+                  <p>jobType:{job.jobType}</p>
+                  <p>remoteOnsite:{job.remoteOnsite}</p>
+                  <p>JobLocation:{job.jobLocation}</p>
+                  <p>jobDescription:{job.jobDescription}</p>
+                  <p>aboutCompany:{job.aboutCompany}</p>
+                  <p>Skills Required: {job.skillsRequired.join(", ")}</p>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>No job listings available</p>
+          )}
         </div>
       ) : (
         <p>No user data available</p>
@@ -55,3 +83,5 @@ console.log(response.data)
 };
 
 export default Profile;
+
+

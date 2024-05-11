@@ -10,7 +10,7 @@ import "./JobDetails.css"
 const JobDetails = ({job}) => {
   const { id } = useParams();
   const [jobDetails, setJobDetails] = useState({});
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const { loggedIn, setLoading, loading } = useJobContext();
   
     
@@ -31,10 +31,10 @@ const JobDetails = ({job}) => {
       });
   }, []);
 
-  const getJobDetails = () => {
-    // navigate(`http://localhost:3002/api/v1/job/job-posting/${id}`);
-    navigate(`/editJob/${id}`);
-  };
+  // const getJobDetails = () => {
+  //   // navigate(`http://localhost:3002/api/v1/job/job-posting/${id}`);
+  //   navigate(`/editJob/${id}`);
+  // };
   
   return (
     <div className="job__details__container">
@@ -60,7 +60,7 @@ const JobDetails = ({job}) => {
             </div>
             <div className="job__details__second__section">
               <span>{jobDetails.companyName}</span>
-              {loggedIn && <button onClick={getJobDetails}>Edit Job</button>}
+              {/* {loggedIn && <button onClick={getJobDetails}>Edit Job</button>} */}
             </div>
             <div className="job__details__third__section">
               <span>{jobDetails.jobLocation}</span>

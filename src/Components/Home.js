@@ -16,7 +16,26 @@ const Home = () => {
     const getJobListings = async () => {
       setLoading(true);
       try {
-        const response = await axios.get("http://localhost:3002/api/v1/job/jobs");
+        const token = localStorage.getItem("token");
+
+        // Make sure token exists
+        if (!token) {
+            // Handle case where token is not available
+            throw new Error("Token is missing.");
+        }
+    
+        // Set the Authorization header with the token
+        const config = {
+            headers: {
+                Authorization: token
+            }
+        };
+    
+        // Make the request with the configured headers
+        const response = await axios.get("http://localhost:3002/api/v1/job/jobs", config);
+    
+        // Handle response
+        
         setJobListings(response.data.jobListings);
       } catch (error) {
         console.error("Error fetching data: ", error);
