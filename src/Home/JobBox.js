@@ -1,5 +1,5 @@
 import React from "react";
- import "./JobBox.css";
+import "./JobBox.css";
 
 import useJobContext from "../hooks/useJobContext";
 import { useNavigate } from "react-router-dom";
@@ -20,13 +20,11 @@ const JobBox = ({ job }) => {
     <div className="jobBox__container">
       <div className="job__left__component">
         <div className="company__Name">
-        <span>{job.companyName}</span>
+          <span>{job.companyName}</span>
         </div>
         <div className="second__div">
           <span>{job.jobPosition}</span>
           <div className="second__div__text">
-            
-           
             <span>₹ {job.monthlySalary}</span>
           </div>
           <div className="second__div__footer">
@@ -35,7 +33,6 @@ const JobBox = ({ job }) => {
           </div>
         </div>
         <div className="third__div">
-       
           <span>{job.jobLocation}</span>
         </div>
       </div>

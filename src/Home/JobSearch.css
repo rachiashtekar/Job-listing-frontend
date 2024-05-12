@@ -32,13 +32,13 @@
   .search-bar > img {
     height: 5vh;
     width: 5vh;
-    padding-left: 2vw;
+    padding-left: -1vw;
   }
   
   .search-bar > input {
     width: 68vw;
     padding: 2vh 1vw;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 700;
     border: none;
   }
