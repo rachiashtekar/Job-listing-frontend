@@ -56,14 +56,14 @@ function Login() {
   return (
     <div>
       <>
-        <div className="form-container">
+        <div className="login-form-container">
           <div className="forms">
             <div className="form-content">
               <div className="login-form">
                 <div className="title">Already have an account?</div>
 
                 <div className="input-boxes">
-                  <div className="input-box">
+                  <div className="input_box">
                     <input
                       type="text"
                       placeholder="Enter your email"
@@ -72,7 +72,7 @@ function Login() {
                     />
                   </div>
 
-                  <div className="input-box">
+                  <div className="input_box">
                     <input
                       type="password"
                       placeholder="Enter your password"

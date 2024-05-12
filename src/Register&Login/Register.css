@@ -2,8 +2,12 @@
   font-style: "DM Sans";
  font-weight: 700;
  font-size: 25px;
- text-align: left;
+ text-align: center;
+ align-items: center;
+ justify-content: center;
  line-height: 57.61px;
+ margin-left: 120px;
+
 }
 
 #register-button{
@@ -17,4 +21,24 @@
 }
 .Register-text{
   font-size: 16px;
+}
+.registration_container{
+  height: 350px;
+    width: 500px;
+    
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 90px;
+    -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
+    -moz-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
+    box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
+}
+.input-box{
+  width: 500px;
+  padding: 5px;
+}
+.input{
+  width: 300px;
+  height: 25px;
 }

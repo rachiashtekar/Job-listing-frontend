@@ -9,7 +9,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
-  const [image,setImage] = useState(null)
+  const [image, setImage] = useState(null);
   const navigate = useNavigate();
 
   // handle register
@@ -23,45 +23,49 @@ const Register = () => {
     }
 
     try {
-      const response = await axios.post(`http://localhost:3002/api/v1/auth/register`, {
-        name,
-        email,
-        password,
-        phone,
-        image
-      });
+      const response = await axios.post(
+        `http://localhost:3002/api/v1/auth/register`,
+        {
+          name,
+          email,
+          password,
+          phone,
+          image,
+        }
+      );
       if (response && response.data.success)
         toast.success("Account created successfully");
-        // alert("successfully login ")
+
       navigate("/login");
     } catch (error) {
       console.log(error);
-       
+
       toast.error("Account not created");
     }
   };
- // Handleimage upload
+  // Handleimage upload
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
     setImage(file);
   };
-  console.log(image)
+  console.log(image);
 
   return (
     <>
-      <div className="container">
-        <div className="title">Create an account</div>
+      <div className="registration_container">
+        <div className="title">Create an Account</div>
         <div className="input-box">
-          <input
-             placeholder="Enter your image here"
-            
-            type="file"
-            accept="image/*"
-            onChange={handleImageUpload}
-          />
+          <div
+            class="inputContainer"
+            role="button"
+           
+            tabindex="0"
+          ></div>
+         
         </div>
         <div className="input-box">
           <input
+          className="input"
             type="text"
             value={name}
             placeholder="Enter Your name"
@@ -70,6 +74,7 @@ const Register = () => {
         </div>
         <div className="input-box">
           <input
+            className="input"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -78,6 +83,7 @@ const Register = () => {
         </div>
         <div className="input-box">
           <input
+            className="input"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -86,28 +92,51 @@ const Register = () => {
         </div>
         <div className="input-box">
           <input
+            className="input"
             type="phone"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             placeholder="Enter your Phone"
           />
         </div>
+        <div className="input-box">
+        <label style={{color:"gray"}}>upload Your Image</label>
+          <br/>
+          <input
+            multiple="multiple"
+            className="input"
+            type="file"
+            name="file"
+            aria-hidden="true"
+            tabindex="-1"
+            accept="image/*"
+            onChange={handleImageUpload}
+          />
+          </div>
+        
+        <div>
+          <input type="checkbox" />
+          <label style={{ fontSize: "13px", fontWeight: "300"}}>
+            By creating an account, I agree to our terms of use and privacy
+            policy
+          </label>
+        </div>
         <div className="button input-box">
           <input
-          id="register-button"
+            id="register-button"
             type="button"
             defaultValue="Register"
             onClick={handleRegister}
           />
         </div>
-        <div>
-          <input type="checkbox" />
-          <label style={{fontSize:"10px",fontWeight:"bold"}}>By creating an account, I agree to our terms of use and privacy policy</label>
-       
-        </div>
         <div className="register-text">
           Already have an account?
-          <span  style={{ color: "black", cursor: "pointer",fontWeight:"bold" }} onClick={() => navigate("/login")}>Login</span>
+          <span
+            style={{ color: "black", cursor: "pointer", fontWeight: "bold" }}
+            onClick={() => navigate("/login")}
+          >
+            Sign In
+          </span>
         </div>
       </div>
     </>
@@ -115,4 +144,3 @@ const Register = () => {
 };
 
 export default Register;
-
