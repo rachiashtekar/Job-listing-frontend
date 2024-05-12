@@ -81,8 +81,9 @@ const Header = () => {
         {loggedIn ? (
           <div className="user__icon">
             <span>Hello Recruiter!</span>
-            {/* Profile icon */}
+            <div className="profile_icon" >
             <FaUserCircle className="profile-icon" onClick={goToProfile} />
+            </div>
             <button onClick={handleLogout}>Logout</button>
           </div>
         ) : (

@@ -88,3 +88,19 @@
   align-items: center;
   cursor: pointer;
 } 
+.profile-icon{
+  height:50px ;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ed5353;
+ 
+}
+.profile_icon{
+  height:50px ;
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+
+
+}

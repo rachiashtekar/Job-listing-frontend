@@ -56,7 +56,7 @@ function Login() {
   return (
     <div>
       <>
-        <div className="container">
+        <div className="form-container">
           <div className="forms">
             <div className="form-content">
               <div className="login-form">
@@ -100,7 +100,7 @@ function Login() {
                       }}
                       onClick={() => navigate("/register")}
                     >
-                      SignIn
+                      Sign Up
                     </span>
                   </div>
                 </div>
