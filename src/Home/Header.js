@@ -50,7 +50,8 @@ import "./Header.css"
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import useJobContext from "../hooks/useJobContext";
-import { FaUserCircle } from "react-icons/fa"; // Import the user icon from react-icons library
+// import { FaUserCircle } from "react-icons/fa";
+import { PiUser } from "react-icons/pi"; // Import the user icon from react-icons library
 
 const Header = () => {
   const navigate = useNavigate();
@@ -82,7 +83,7 @@ const Header = () => {
           <div className="user__icon">
             <span>Hello Recruiter!</span>
             <div className="profile_icon" >
-            <FaUserCircle className="profile-icon" onClick={goToProfile} />
+            <PiUser className="profile-icon" onClick={goToProfile} />
             </div>
             <button onClick={handleLogout}>Logout</button>
           </div>

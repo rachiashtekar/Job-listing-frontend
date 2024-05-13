@@ -3,17 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-.profile_image {
-  border-radius: 50%;
-}
+
 .profile_container {
-  width: 200px;
-  height: 150px;
-  border: 2px solid black;
+  width: 160px;
+  height: 130px;
+
   border-radius: 50%;
+
+  /* background-color:#ed5353 ; */
+}
+.user_profile {
+  height: 150px;
+  width: 80%;
+  color: #ed5353;
 }
 .user_container {
-  margin-left: 80px;
+  margin-left: 10%;
 }
 h2 {
   background-color: #ed5353;
@@ -31,9 +36,8 @@ h2 {
 }
 .info_container {
   height: 150px;
-  width: 600px;
+  width: 60%;
   margin-top: 20px;
-
   -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
   -moz-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
   box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
@@ -54,13 +58,14 @@ d {
 }
 .job_container {
   margin-top: 10px;
+
 }
 .list_container {
   list-style-type: none;
 }
 .job_info_container {
-  height: 250px;
-  width: 700px;
+  height: 230px;
+  width: 70%;
   margin-top: 20px;
   justify-content: center;
   align-items: center;
@@ -106,7 +111,7 @@ d {
 }
 .remoteonsite {
   position: relative;
-  /* left: 200px; */
+  left: 200px;
   top: 250px;
 }
 .location {
@@ -124,11 +129,12 @@ d {
   -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
   -moz-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
   box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-  border: 2px solid rgb(184, 174, 174);
-  height: 60px;
-  width: 600px;
+  /* border: 2px solid rgb(184, 174, 174); */
+  height: 40px;
+  width: 60%;
   margin-left: 50px;
   font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 .skills {
   height: 12vh;
@@ -152,24 +158,19 @@ d {
     color: white;
 } */
 
-.button_edit{
-
-    
-    
-    cursor: pointer;
-    margin-top: 10px;
-    position: absolute;
-    left: 600px;
-    
+.button_edit {
+  cursor: pointer;
+  margin-top: 10px;
+  position: absolute;
+  left: 60%;
 }
-.edit{
-    color: white;
-    background-color:#ed5353 ;
-    font-weight: bold;
-    border: none;
-    margin-top: 10px;
-    height: 30px;
-    width: 80px;
-    border-radius: 5px solid red;
+.edit {
+  color: white;
+  background-color: #ed5353;
+  font-weight: bold;
+  border: none;
+  margin-top: 10px;
+  height: 30px;
+  width: 80px;
+  border-radius: 5px solid red;
 }
-

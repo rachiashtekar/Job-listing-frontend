@@ -9,7 +9,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
-  const [image, setImage] = useState(null);
+
   const navigate = useNavigate();
 
   // handle register
@@ -17,7 +17,7 @@ const Register = () => {
     e.preventDefault();
 
     // Validate inputs
-    if (!name || !email || !password || !phone || !image) {
+    if (!name || !email || !password || !phone) {
       toast.error("Please fill in all fields");
       return;
     }
@@ -30,7 +30,6 @@ const Register = () => {
           email,
           password,
           phone,
-          image,
         }
       );
       if (response && response.data.success)
@@ -43,29 +42,17 @@ const Register = () => {
       toast.error("Account not created");
     }
   };
-  // Handleimage upload
-  const handleImageUpload = (e) => {
-    const file = e.target.files[0];
-    setImage(file);
-  };
-  console.log(image);
 
   return (
     <>
       <div className="registration_container">
         <div className="title">Create an Account</div>
         <div className="input-box">
-          <div
-            class="inputContainer"
-            role="button"
-           
-            tabindex="0"
-          ></div>
-         
+          <div class="inputContainer" role="button" tabindex="0"></div>
         </div>
         <div className="input-box">
           <input
-          className="input"
+            className="input"
             type="text"
             value={name}
             placeholder="Enter Your name"
@@ -99,24 +86,10 @@ const Register = () => {
             placeholder="Enter your Phone"
           />
         </div>
-        <div className="input-box">
-        <label style={{color:"gray"}}>upload Your Image</label>
-          <br/>
-          <input
-            multiple="multiple"
-            className="input"
-            type="file"
-            name="file"
-            aria-hidden="true"
-            tabindex="-1"
-            accept="image/*"
-            onChange={handleImageUpload}
-          />
-          </div>
-        
+
         <div>
           <input type="checkbox" />
-          <label style={{ fontSize: "13px", fontWeight: "300"}}>
+          <label style={{ fontSize: "13px", fontWeight: "300" }}>
             By creating an account, I agree to our terms of use and privacy
             policy
           </label>
