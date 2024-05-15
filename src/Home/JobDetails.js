@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import moment from "moment";
 import { useParams } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import useJobContext from "../hooks/useJobContext";
 import "./JobDetails.css"
 
@@ -11,7 +11,7 @@ const JobDetails = ({job}) => {
   const { id } = useParams();
   const [jobDetails, setJobDetails] = useState({});
   // const navigate = useNavigate();
-  const { loggedIn, setLoading, loading } = useJobContext();
+  const {  setLoading, loading } = useJobContext();
   
     
   useEffect(() => {
@@ -29,12 +29,9 @@ const JobDetails = ({job}) => {
       .finally(() => {
         setLoading(false);
       });
-  }, []);
+  }, [id,setLoading]);
 
-  // const getJobDetails = () => {
-  //   // navigate(`http://localhost:3002/api/v1/job/job-posting/${id}`);
-  //   navigate(`/editJob/${id}`);
-  // };
+  
   
   return (
     <div className="job__details__container">
@@ -60,7 +57,7 @@ const JobDetails = ({job}) => {
             </div>
             <div className="job__details__second__section">
               <span>{jobDetails.companyName}</span>
-              {/* {loggedIn && <button onClick={getJobDetails}>Edit Job</button>} */}
+            
             </div>
             <div className="job__details__third__section">
               <span>{jobDetails.jobLocation}</span>
@@ -79,7 +76,7 @@ const JobDetails = ({job}) => {
               </div>
               <div className="job__details__fourth__section__right">
                 <div style={{height:"400px" }} className="job__details__fourth__section__right__first">
-                  {/* <img src={duration} alt="" /> */}
+             
                   <span>Duration</span>
                 </div>
                 <div className="job__details__fourth__section__right__second">
