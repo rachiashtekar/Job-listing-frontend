@@ -103,14 +103,14 @@ const Profile = () => {
                         <div className="location">
                           <p className="job_info">{job.jobLocation}</p>
                         </div>
-                        <div className="description">
+                        {/* <div className="description">
                           <p className="job_info">
                            {job.jobDescription}
                           </p>
-                        </div>
+                        </div> */}
                         <div className="skills">
                           <p className="job_info">
-                            Skills Required: {job.skillsRequired.join(", ")}
+                            {job.skillsRequired.join(", ")}
                           </p>
                         </div>
                       </div>

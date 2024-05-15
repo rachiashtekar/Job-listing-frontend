@@ -7,10 +7,7 @@
   align-items: center;
   border-radius: 0 0 8vh 8vh;
   background-color: #ED5353;
-  
   margin-top: -8px;
-  
-  
 }
  
  .job__title {
@@ -24,10 +21,11 @@
 .user__icon {
   height: 10vh;
   width: 20vw;
-  /* margin-right: vw; */
+  margin-right: 5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* border: 2px solid red; */
 }
 
 .user__icon > button {
@@ -39,9 +37,6 @@
   outline: none;
   cursor: pointer;
 }
-
-
-
 .user__icon > span {
   font-weight: 600;
   font-size: 1rem;
