@@ -137,8 +137,9 @@ const EditJob = () => {
 
   return (
     <div className="edit__job">
+     
          <div className="edit__job__left">
-        <h2>Edit Job</h2>
+        <h2 style={{height:"40px",padding:"10px" }}>Edit Job</h2>
         <form className="job__form" onSubmit={handleSubmit}>
           <div className="job__input">
             <label htmlFor="companyName">Company Name</label>
@@ -199,6 +200,7 @@ const EditJob = () => {
           <div className="job__input">
             <label htmlFor="jobDescription">Job Description</label>
             <textarea
+            type="text"
               placeholder="Job Description"
               value={jobDescription}
               onChange={(e) => setJobDescription(e.target.value)}

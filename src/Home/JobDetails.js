@@ -69,16 +69,16 @@ const JobDetails = ({job}) => {
             </div>
             <div className="job__details__fourth__section">
               <div className="job__details__fourth__section__left">
-                <div className="job__details__fourth__section__left__first">
-                  {/* <img src={stipend} alt="" /> */}
+                <div style={{height:"400px" }} className="job__details__fourth__section__left__first">
+               
                   <span>Stipend</span>
                 </div>
-                <div className="job__details__fourth__section__left__second">
+                <div style={{height:"400px" }} className="job__details__fourth__section__left__second">
                   <span> Rs {jobDetails.monthlySalary}/month</span>
                 </div>
               </div>
               <div className="job__details__fourth__section__right">
-                <div className="job__details__fourth__section__right__first">
+                <div style={{height:"400px" }} className="job__details__fourth__section__right__first">
                   {/* <img src={duration} alt="" /> */}
                   <span>Duration</span>
                 </div>
@@ -87,16 +87,16 @@ const JobDetails = ({job}) => {
                 </div>
               </div>
             </div>
-            <div className="job__details__fifth__section">
-              <h1>About Company</h1>
+            <div style={{height:"50px" }} className="job__details__fifth__section">
+              <h4>About Company</h4>
               <p>{jobDetails.aboutCompany}</p>
             </div>
-            <div className="job__details__sixth__section">
-              <h1>About the job/internship</h1>
+            <div style={{height:"50px" }} className="job__details__sixth__section">
+              <h4>About the job/internship</h4>
               <p>{jobDetails.jobDescription}</p>
             </div>
-            <div className="job__details__seventh__section">
-              <h1>Skill(s) Required</h1>
+            <div style={{height:"50px" }} className="job__details__seventh__section">
+              <h4>Skills Required</h4>
               <div className="job__details__seventh__section__skills">
                 {jobDetails.skillsRequired?.map((skill) => {
                   console.log(skill);
@@ -104,8 +104,8 @@ const JobDetails = ({job}) => {
                 })}
               </div>
             </div>
-            <div className="job__details__eighth__section">
-              <h1>Additional Information</h1>
+            <div style={{height:"50px" }} className="job__details__eighth__section">
+              <h4>Additional Information</h4>
               <p>Number of openings 2</p>
             </div>
           </div>

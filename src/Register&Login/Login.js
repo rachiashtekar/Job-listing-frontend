@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
-// import {loginImage} from "../../src/assets/userpage.png";
+import  loginImage  from "../../src/assets/userpage.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
@@ -21,10 +21,6 @@ function Login() {
         }
       );
 
-      //    const result = response.data.success
-      //    if(result===false?nevigate(/login):
-      // localStorage.setItem("token", response.data.token);
-
       const success = response.data.success;
 
       if (!success) {
@@ -36,25 +32,16 @@ function Login() {
         navigate("/"); // Redirect to home page
       }
 
-      // Handle successful login
-      // console.log('Login successful', response.data);
-
       toast.success("Login successful");
       navigate("/");
-      // alert("login sucessfull");
-      // window.location.reload();
-
-      // localStorage.setItem("token", response.data.token);
 
       // Redirect to the Profile page
     } catch (error) {
-      // Handle login error
-      // console.error('Login error', error.response.data);
       toast.error("Enter Correct Email or Password");
     }
   };
   return (
-    <div>
+    <div className="login_main_container">
       <>
         <div className="login-form-container">
           <div className="forms">
@@ -65,8 +52,9 @@ function Login() {
                 <div className="input-boxes">
                   <div className="input_box">
                     <input
+                      className="login_input"
                       type="text"
-                      placeholder="Enter your email"
+                      placeholder="Email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
@@ -74,8 +62,9 @@ function Login() {
 
                   <div className="input_box">
                     <input
+                    className="login_input"
                       type="password"
-                      placeholder="Enter your password"
+                      placeholder="Password"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                     />
@@ -109,9 +98,9 @@ function Login() {
           </div>
         </div>
       </>
-      {/* <div>
-        <img src={`${loginImage}`} alt="login-web" />
-      </div> */}
+      <div className="Job_finder_image">
+        <img className="Job_image" src={loginImage } alt="login-web" />
+      </div>
     </div>
   );
 }

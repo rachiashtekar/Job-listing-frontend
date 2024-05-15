@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import React, { useState } from "react";
+import  loginImage  from "../../src/assets/userpage.png";
 import "./Register.css";
 
 const Register = () => {
@@ -44,9 +45,9 @@ const Register = () => {
   };
 
   return (
-    <>
+    <div className="Registration_main_container">
       <div className="registration_container">
-        <div className="title">Create an Account</div>
+        <div className="title_registration">Create an Account</div>
         <div className="input-box">
           <div class="inputContainer" role="button" tabindex="0"></div>
         </div>
@@ -55,7 +56,7 @@ const Register = () => {
             className="input"
             type="text"
             value={name}
-            placeholder="Enter Your name"
+            placeholder=" Name"
             onChange={(e) => setName(e.target.value)}
           />
         </div>
@@ -65,7 +66,7 @@ const Register = () => {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your email"
+            placeholder=" Email"
           />
         </div>
         <div className="input-box">
@@ -74,7 +75,7 @@ const Register = () => {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="Enter your password"
+            placeholder=" Password"
           />
         </div>
         <div className="input-box">
@@ -83,13 +84,13 @@ const Register = () => {
             type="phone"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            placeholder="Enter your Phone"
+            placeholder="Phone"
           />
         </div>
 
         <div>
           <input type="checkbox" />
-          <label style={{ fontSize: "13px", fontWeight: "300" }}>
+          <label style={{ fontSize: "11px", fontWeight: "300",marginLeft:"8px" }}>
             By creating an account, I agree to our terms of use and privacy
             policy
           </label>
@@ -98,12 +99,12 @@ const Register = () => {
           <input
             id="register-button"
             type="button"
-            defaultValue="Register"
+            defaultValue="Create Account"
             onClick={handleRegister}
           />
         </div>
         <div className="register-text">
-          Already have an account?
+        <p style={{fontSize:"12px"}}> Already have an account?</p> 
           <span
             style={{ color: "black", cursor: "pointer", fontWeight: "bold" }}
             onClick={() => navigate("/login")}
@@ -112,7 +113,10 @@ const Register = () => {
           </span>
         </div>
       </div>
-    </>
+      <div className="Job_finder_registration_image">
+        <img className="Job_registration_image" src={loginImage } alt="login-web" />
+      </div>
+    </div>
   );
 };
 

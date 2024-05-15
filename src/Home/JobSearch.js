@@ -74,6 +74,7 @@ const JobSearch = () => {
         <div className="search-bar">
            <img src={searchIcon} alt="Search Icon" /> 
           <input
+          id="search_placeholder"
             type="text"
             placeholder="Type any job title"
             value={searchTerm}

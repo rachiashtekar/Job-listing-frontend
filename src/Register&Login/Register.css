@@ -1,44 +1,54 @@
-.title{
-  font-style: "DM Sans";
- font-weight: 700;
- font-size: 25px;
- text-align: center;
- align-items: center;
- justify-content: center;
- line-height: 57.61px;
- margin-left: 120px;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
+.title_registration {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 57.61px;
+  margin-left: 10px;
+  font-family: "DM Sans", sans-serif;
 }
 
-#register-button{
-  background: #ED5353;
-    color: white;
-    border: none;
-    height: 28px;
-    width: 80px;
-    border-radius: 5px;
-
+#register-button {
+  background: #ed5353;
+  color: white;
+  border: none;
+  height: 28px;
+  width: 110px;
+  border-radius: 5px;
 }
-.Register-text{
-  font-size: 16px;
+.register-text {
+  display: flex;
+  gap: 6px;
 }
-.registration_container{
+.registration_container {
   height: 350px;
-    width: 500px;
-    
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    margin-top: 90px;
-    -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-    -moz-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-    box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
+  width: 400px;
+  margin: auto;
+  margin-top: 65px;
+  /* border: 2px solid red; */
 }
-.input-box{
+.input-box {
   width: 500px;
-  padding: 5px;
+  padding: 8px;
 }
-.input{
+.input {
   width: 300px;
-  height: 25px;
+  height: 32px;
+}
+.Registration_main_container {
+  display: flex;
+  gap: 2vw;
+}
+.Job_registration_image {
+  height: 500px;
+  width: 500px;
+}
+input::placeholder {
+  font-size: 1px;
+}
+input[type="checkbox"] {
+  border-radius: 0.5rem;
+ width: 10px;
+  height: 10px;
+  margin-left: 10px;
 }
