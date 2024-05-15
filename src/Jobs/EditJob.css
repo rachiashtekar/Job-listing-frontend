@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+    padding: 10px;
 }
 
 .edit__job__left{
@@ -30,6 +31,7 @@
     width: 50vw;
     display: flex;
     justify-content: space-between;
+    padding:10px;
 }
 
 .job__input > input {
@@ -58,7 +60,7 @@
 }
 
 .job__input > textarea {
-    height: 5vh;
+    height: 8vh;
     width: 30vw;
     resize: none;
     border: #C2C2C2 1px solid;
@@ -72,6 +74,7 @@
     height: 100vh;
     width: 45vw;
     color: white;
+    
     
 }
 
@@ -96,4 +99,7 @@ height: 5.5vh;
     font-size: 1.2rem;
     margin: 1vh 0 0 1vh;
     cursor: pointer;
+}
+textarea{
+    padding: 10px;
 }

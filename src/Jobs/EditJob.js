@@ -131,15 +131,15 @@ const EditJob = () => {
       });
   };
 
-  const cancelUpdate = () => {
-    navigate("/");
-  };
+  // const cancelUpdate = () => {
+  //   navigate("/");
+  // };
 
   return (
     <div className="edit__job">
      
          <div className="edit__job__left">
-        <h2 style={{height:"40px",padding:"10px" }}>Edit Job</h2>
+        <h3 style={{height:"40px",width:"100px",padding:"10px", backgroundColor: "#ED5353" ,color:"white",borderRadius:"2px"}}>Edit Job</h3>
         <form className="job__form" onSubmit={handleSubmit}>
           <div className="job__input">
             <label htmlFor="companyName">Company Name</label>
@@ -163,7 +163,7 @@ const EditJob = () => {
           <div className="job__input">
             <label htmlFor="monthlySalary">Monthly Salary</label>
             <input
-              type="number"
+              type="text"
               placeholder="Monthly Salary"
               value={monthlySalary}
               onChange={(e) => setMonthlySalary(e.target.value)}
@@ -200,8 +200,7 @@ const EditJob = () => {
           <div className="job__input">
             <label htmlFor="jobDescription">Job Description</label>
             <textarea
-            type="text"
-              placeholder="Job Description"
+            placeholder="Job Description"
               value={jobDescription}
               onChange={(e) => setJobDescription(e.target.value)}
             ></textarea>
@@ -224,9 +223,9 @@ const EditJob = () => {
             />
           </div>
           <div className="job__buttons">
-            <button onClick={cancelUpdate} className="cancel__updateJob">
+            {/* <button onClick={cancelUpdate} className="cancel__updateJob">
               Cancel
-            </button>
+            </button> */}
             <button type="submit" className="update__job__button">
               Update
             </button>

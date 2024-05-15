@@ -198,9 +198,9 @@ const AddJob = () => {
             />
           </div>
           <div className="job__buttons">
-            <button className="cancel__addJob" onClick={cancelAddJob}>
+            {/* <button className="cancel__addJob" onClick={cancelAddJob}>
               Cancel
-            </button>
+            </button> */}
             <button type="submit" className="add__job__button">
                Add Job
             </button>
