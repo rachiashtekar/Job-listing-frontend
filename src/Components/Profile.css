@@ -64,7 +64,7 @@ d {
   list-style-type: none;
 }
 .job_info_container {
-  height: 150px;
+  height: 160px;
   width: 90%;
   margin-top: 20px;
   justify-content: center;
@@ -132,7 +132,7 @@ d {
 }
 
 .skills {
-  height: 7vh;
+  height: 6vh;
   width: 20vw;
   display: flex;
   justify-content: center;
@@ -142,7 +142,7 @@ d {
  text-align: center;
   position: relative;
   left:500px;
-  bottom: 10px;
+  bottom: 20px;
   border-radius: 2px;
   padding: 5px;
 }
