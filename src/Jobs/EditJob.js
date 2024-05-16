@@ -3,6 +3,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
+import { baseURL } from "../Components/utils/baseURL";
 import "./EditJob.css"
 
 const EditJob = () => {
@@ -20,7 +21,7 @@ const EditJob = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3002/api/v1/job/jobs/${id}`)
+      .get(`${baseURL}/api/v1/job/jobs/${id}`)
       .then((response) => {
         console.log("response", response.data.jobListing);
         setCompanyName(response.data.jobListing.companyName);

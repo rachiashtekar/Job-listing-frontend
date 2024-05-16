@@ -3,6 +3,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import React, { useState } from "react";
 import  loginImage  from "../../src/assets/userpage.png";
+import { baseURL } from "../Components/utils/baseURL";
 import "./Register.css";
 
 const Register = () => {
@@ -25,7 +26,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:3002/api/v1/auth/register`,
+        `${baseURL}/api/v1/auth/register`,
         {
           name,
           email,

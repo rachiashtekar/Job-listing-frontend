@@ -4,6 +4,7 @@ import axios from "axios";
 // import JobContainer from "../Home/JobContainer";
 import JobContainer from "../Home/JobContainer";
 import JobSearch from "../Home/JobSearch";
+import {baseURL}from "./utils/baseURL"
 
 const Home = () => {
   const { loggedIn, setLoggedIn, setJobListings, setLoading } = useJobContext();
@@ -32,7 +33,7 @@ const Home = () => {
         };
     
         // Make the request with the configured headers
-        const response = await axios.get("http://localhost:3002/api/v1/job/jobs", config);
+        const response = await axios.get(`${baseURL}/api/v1/job/jobs`, config);
     
         // Handle response
         

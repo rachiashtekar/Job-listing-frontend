@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 import "./AddJob.css"
+import { baseURL } from "../Components/utils/baseURL";
 const AddJob = () => {
   const [companyName, setCompanyName] = useState("");
   const [jobPosition, setJobPosition] = useState("");
@@ -33,7 +34,7 @@ const AddJob = () => {
 
     // Send the POST request
     axios
-      .post(`http://localhost:3002/api/v1/job/job-posting`, postData, {
+      .post(`${baseURL}/api/v1/job/job-posting`, postData, {
         headers: {
           Authorization: localStorage.getItem("token"),
         },

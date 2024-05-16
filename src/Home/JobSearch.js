@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import debounce from "lodash.debounce";
  import skills from "../Home/skillOptions";
+ import { baseURL } from "../Components/utils/baseURL";
 
 
 const JobSearch = () => {
@@ -52,7 +53,7 @@ const JobSearch = () => {
   const getJobListings = useCallback(
     debounce((_searchTerm, _selectedSkills) => {
       axios
-        .get(`http://localhost:3002/api/v1/job/jobs`, {
+        .get(`${baseURL}/api/v1/job/jobs`, {
           params: {
             searchTerm: _searchTerm,
             skills: _selectedSkills.join(","),

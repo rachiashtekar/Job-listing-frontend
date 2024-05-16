@@ -5,6 +5,7 @@ import useJobContext from "../hooks/useJobContext";
 // import { FaUserCircle } from "react-icons/fa"; 
 import { PiUser } from "react-icons/pi";
 import "./Profile.css";
+import { baseURL } from "./utils/baseURL";
 
 const Profile = () => {
   const [user, setUser] = useState(null);
@@ -22,7 +23,7 @@ const Profile = () => {
         }
 
         const userResponse = await axios.get(
-          `http://localhost:3002/api/v1/auth/profile`,
+          `${baseURL}/api/v1/auth/profile`,
           {
             headers: {
               Authorization: token,

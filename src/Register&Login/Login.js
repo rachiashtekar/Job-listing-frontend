@@ -4,6 +4,7 @@ import  loginImage  from "../../src/assets/userpage.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { baseURL } from "../Components/utils/baseURL";
 function Login() {
   const [email, setEmail] = useState("");
 
@@ -14,7 +15,7 @@ function Login() {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        `http://localhost:3002/api/v1/auth/login`,
+        `${baseURL}api/v1/auth/login`,
         {
           email,
           password,
