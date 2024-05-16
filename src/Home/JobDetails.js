@@ -4,6 +4,7 @@ import moment from "moment";
 import { useParams } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 import useJobContext from "../hooks/useJobContext";
+import { baseURL } from "../Components/utils/baseURL";
 import "./JobDetails.css"
 
 
@@ -17,7 +18,7 @@ const JobDetails = ({job}) => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:3002/api/v1/job/jobs/${id}`)
+      .get(`${baseURL}/api/v1/job/jobs/${id}`)
       .then((response) => {
         setJobDetails(response.data.jobListing);
         setLoading(false);

@@ -68,7 +68,7 @@ const EditJob = () => {
     };
 
     // Send the POST request
-    axios.put(`http://localhost:3002/api/v1/job/job-posting/${id}`, postData, {
+    axios.put(`${baseURL}/api/v1/job/job-posting/${id}`, postData, {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
