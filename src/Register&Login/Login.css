@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 .login_main_container{
     display: flex;
-    gap: 32vw;
+    gap: 10vw;
 }
 .title{
  font-family: "DM Sans", sans-serif;
@@ -38,8 +38,8 @@
     height: 200px;
     width: 330px;
     display: flex;
-    /* justify-content: center; */
-    justify-content: flex-end;
+    justify-content: center;
+    /* justify-content: flex-end; */
     align-items: center;
     margin-left: 50px;
   
