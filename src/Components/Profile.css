@@ -177,6 +177,7 @@ d {
   }
   .job_info_container{
     height: 50%;
+    width: 100%;
   
   }
 
@@ -230,7 +231,8 @@ d {
 
   .button_edit {
     left: auto;
-    right: 20%;
+    right: 15%;
     /* bottom: 9%; */
   }
+  
 }
