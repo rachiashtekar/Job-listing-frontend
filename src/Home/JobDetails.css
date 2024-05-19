@@ -243,7 +243,7 @@
   .job__details__fourth__section{
     display: flex;
     justify-content: flex-start;
-      gap: 15vw;
+      gap: 20vw;
     align-items: center;
     height: 9vh;
     width: 80vw;
