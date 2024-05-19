@@ -69,7 +69,7 @@ const JobDetails = ({job}) => {
               <div className="job__details__fourth__section__left">
                 <div style={{height:"400px" }} className="job__details__fourth__section__left__first">
                
-                  <span>Stipend</span>
+                  <span>Salary</span>
                 </div>
                 <div style={{height:"400px" }} className="job__details__fourth__section__left__second">
                   <span> Rs {jobDetails.monthlySalary}/month</span>
