@@ -1,123 +1,117 @@
 .job-search {
-    height: 25vh;
-    width: 80vw;
-    margin: 5vh auto;
-    padding: 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-    -moz-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-    box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25); */
-    -webkit-box-shadow: 0px 0px 22px 2px rgba(145, 134, 134, 0.25);
-    -moz-box-shadow: 0px 0px 22px 2px rgba(145, 122, 122, 0.25);
-    box-shadow: 0px 0px 22px 2px rgba(163, 148, 148, 0.25);
-  }
-  
-  .search-form {
-    margin: 1vh 5vw;
-    width: 80vw;
-    display: flex;
-    align-items: center;
-  }
-  input::placeholder{
-    font-size: 15px;
-  }
-  
-  .search-bar {
-    position: relative;
-    display: flex;
-    border: 2px solid #ccc;
-    border-radius: 2vh;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-left: 2.5vw;
-  }
-  
-  .search-bar > img {
-    height: 5vh;
-    width: 5vh;
-    padding-left: -1vw;
-  }
-  
+  height: 25vh;
+  width: 80vw;
+  margin: 5vh auto;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 22px 2px rgba(145, 134, 134, 0.25);
+  -moz-box-shadow: 0px 0px 22px 2px rgba(145, 122, 122, 0.25);
+  box-shadow: 0px 0px 22px 2px rgba(163, 148, 148, 0.25);
+}
+
+.search-form {
+  margin: 1vh 5vw;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+}
+input::placeholder {
+  font-size: 15px;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  border: 2px solid #ccc;
+  border-radius: 2vh;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 2.5vw;
+}
+
+.search-bar > img {
+  height: 5vh;
+  width: 5vh;
+  padding-left: -1vw;
+}
+
+.search-bar > input {
+  width: 68vw;
+  padding: 2vh 1vw;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+}
+
+.search-bar > input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.job__search__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5vw;
+  margin-top: 3vh;
+  width: 100%;
+}
+
+.add__job__btn {
+  height: 6vh;
+  width: 15vw;
+  border-radius: 1vh;
+  border: none;
+
+  background-color: #2ce2a2;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 5vw;
+}
+
+.select-skills {
+  width: 60vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.select-skills > select {
+  height: 5vh;
+  width: 17vw;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.selected-skills {
+  width: 35vw;
+}
+
+.selected-skill {
+  display: inline-block;
+  background-color: #ffeeee;
+  border-radius: 5px;
+  padding: 0.5vh 0.5vw;
+  margin: 0.5vh 0.5vw;
+}
+@media (max-width: 480px) {
   .search-bar > input {
-    width: 68vw;
-    padding: 2vh 1vw;
-    font-size: 1.3rem;
-    font-weight: 700;
-    border: none;
+    font-size: 1rem;
+    padding: 1.5vh 1vw;
   }
-  
-  .search-bar > input:focus {
-    outline: none;
-    box-shadow: none;
-  }
-  
-  .job__search__footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 5vw;
-    margin-top: 3vh;
-    width: 100%;
-  }
-  
+
   .add__job__btn {
-    height: 6vh;
-    width: 15vw;
-    border-radius: 1vh;
-    border: none;
-    /* background-color: #ed5353; */
-    background-color: #2ce2a2;
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 700;
-    cursor: pointer;
-    margin-right: 5vw;
-  }
-  
-  .select-skills {
-    width: 60vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  
-  .select-skills > select {
+    width: 30vw;
     height: 5vh;
-    width: 17vw;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    font-size: 1rem;
   }
-  
-  .selected-skills {
-    width: 35vw;
+
+  .select-skills > select {
+    width: 90vw;
   }
-  
-  .selected-skill {
-    display: inline-block;
-    background-color: #ffeeee;
-    border-radius: 5px;
-    padding: 0.5vh 0.5vw;
-    margin: 0.5vh 0.5vw;
-  }
-  
-  .remove-skill {
-    font-size: larger;
-    cursor: pointer;
-    color: white;
-    background-color: #ff6b6b;
-    border: none;
-    margin-left: 0.5vw;
-  }
-  
-  .select-skills > button {
-    background-color: transparent;
-    color: #ff6b6b;
-    font-size: 2vw;
-    cursor: pointer;
-    align-self: flex-end;
-    border: none;
-    margin-bottom: 0.7vh;
-  }
+}

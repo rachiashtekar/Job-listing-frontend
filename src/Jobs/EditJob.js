@@ -141,7 +141,7 @@ const EditJob = () => {
     <div className="edit__job">
      
          <div className="edit__job__left">
-        <h3 style={{height:"40px",width:"100px",padding:"10px", backgroundColor: "#ED5353" ,color:"white",borderRadius:"2px"}}>Edit Job</h3>
+        <h3 style={{height:"40px",width:"100px",padding:"10px", backgroundColor: "#2ce2a2" ,color:"white",borderRadius:"2px"}}>Edit Job</h3>
         <form className="job__form" onSubmit={handleSubmit}>
           <div className="job__input">
             <label htmlFor="companyName">Company Name</label>
