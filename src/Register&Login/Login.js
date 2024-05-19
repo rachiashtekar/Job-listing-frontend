@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
-import  loginImage  from "../../src/assets/userpage.png";
+import loginImage from "../../src/assets/userpage.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
@@ -14,13 +14,10 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post(
-        `${baseURL}/api/v1/auth/login`,
-        {
-          email,
-          password,
-        }
-      );
+      const response = await axios.post(`${baseURL}/api/v1/auth/login`, {
+        email,
+        password,
+      });
 
       const success = response.data.success;
 
@@ -43,7 +40,7 @@ function Login() {
   };
   return (
     <div className="login_main_container">
-      <>
+      
         <div className="login-form-container">
           <div className="forms">
             <div className="form-content">
@@ -63,7 +60,7 @@ function Login() {
 
                   <div className="input_box">
                     <input
-                    className="login_input"
+                      className="login_input"
                       type="password"
                       placeholder="Password"
                       value={password}
@@ -98,9 +95,9 @@ function Login() {
             </div>
           </div>
         </div>
-      </>
+    
       <div className="Job_finder_image">
-        <img className="Job_image" src={loginImage } alt="login-web" />
+        <img className="Job_image" src={loginImage} alt="login-web" />
       </div>
     </div>
   );
