@@ -13,11 +13,11 @@
 .user_profile {
   height: 150px;
   width: 80%;
-  color:#2ce2a2;
+  color: #2ce2a2;
 }
 
 h2 {
-  background-color:#2ce2a2;
+  background-color: #2ce2a2;
   color: white;
   height: 40px;
   width: 150px;
@@ -34,12 +34,10 @@ h2 {
   height: 150px;
   width: 60%;
   margin-top: 20px;
-  /* -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-  -moz-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-  box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25); */
+
   -webkit-box-shadow: 0px 0px 22px 2px rgba(145, 134, 134, 0.25);
-    -moz-box-shadow: 0px 0px 22px 2px rgba(145, 122, 122, 0.25);
-    box-shadow: 0px 0px 22px 2px rgba(163, 148, 148, 0.25);
+  -moz-box-shadow: 0px 0px 22px 2px rgba(145, 122, 122, 0.25);
+  box-shadow: 0px 0px 22px 2px rgba(163, 148, 148, 0.25);
 }
 .information {
   padding: 10px;
@@ -49,22 +47,19 @@ h2 {
 d {
   font-size: 22px;
   font-weight: bold;
-  background-color:#2edfa1;
+  background-color: #2edfa1;
   border-radius: 5px;
-  /* -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-  -moz-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-  box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25); */
+
   -webkit-box-shadow: 0px 0px 22px 2px rgba(145, 134, 134, 0.25);
-    -moz-box-shadow: 0px 0px 22px 2px rgba(145, 122, 122, 0.25);
-    box-shadow: 0px 0px 22px 2px rgba(163, 148, 148, 0.25);
+  -moz-box-shadow: 0px 0px 22px 2px rgba(145, 122, 122, 0.25);
+  box-shadow: 0px 0px 22px 2px rgba(163, 148, 148, 0.25);
 }
 .job_container {
   margin-top: 10px;
- 
+
   margin-left: 10%;
   justify-content: center;
   margin-right: 10%;
-
 }
 .list_container {
   list-style-type: none;
@@ -75,33 +70,30 @@ d {
   margin-top: 20px;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid red;  */
-  /* -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-  -moz-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-  box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25); */
+
   -webkit-box-shadow: 0px 0px 22px 2px rgba(145, 134, 134, 0.25);
-    -moz-box-shadow: 0px 0px 22px 2px rgba(145, 122, 122, 0.25);
-    box-shadow: 0px 0px 22px 2px rgba(163, 148, 148, 0.25);
+  -moz-box-shadow: 0px 0px 22px 2px rgba(145, 122, 122, 0.25);
+  box-shadow: 0px 0px 22px 2px rgba(163, 148, 148, 0.25);
 }
 .companyname {
   font-size: 18px;
   font-family: "Times New Roman", Times, serif;
-  color:black;
+  color: black;
   position: relative;
-  top:60px;
+  top: 60px;
   margin-left: 30px;
 }
 .position {
   color: grey;
   font-size: 3.5vh;
   height: 10%;
-  /* width: 15vw; */
+
   margin-top: 3vh;
   margin-left: 32vh;
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  /* align-items: center; */
+
   color: #9c9c9c;
   font-weight: 600;
 }
@@ -122,7 +114,7 @@ d {
   color: red;
   margin-left: 150px;
   position: relative;
-  top:40px;
+  top: 40px;
 }
 .remoteonsite {
   position: relative;
@@ -136,7 +128,7 @@ d {
   font-weight: 500;
   margin-bottom: 0.5vh;
   color: #5b5555;
- width: 100px;
+  width: 100px;
   top: -1rem;
 }
 
@@ -147,22 +139,20 @@ d {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: #FFEEEE;
- text-align: center;
+  background: #ffeeee;
+  text-align: center;
   position: relative;
-  left:500px;
+  left: 500px;
   bottom: 20px;
   border-radius: 2px;
   padding: 5px;
 }
-
 
 .button_edit {
   cursor: pointer;
   margin-top: 10px;
   position: absolute;
   left: 70%;
- 
 }
 .edit {
   color: white;
@@ -172,9 +162,66 @@ d {
   margin-top: 10px;
   height: 30px;
   width: 80px;
-  border-radius: 5px ;
+  border-radius: 5px;
 }
-.container{
-
+.container {
   margin-left: 1px;
+}
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  .profile_container {
+    width: 120px;
+    height: 100px;
+    margin-left: 40px;
+  }
+
+  .user_profile {
+    height: 130px;
+    width: 100%;
+  }
+
+  .h2 {
+    width: 120px;
+    height: 35px;
+  }
+
+  .main_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info_container {
+    width: 90%;
+  }
+
+  .position,
+  .salary,
+  .type,
+  .remoteonsite,
+  .location,
+  .skills {
+    position: static;
+    margin: 10px 0;
+    left: 0;
+    top: 0;
+    width: auto;
+  }
+
+  .position,
+  .salary {
+    font-size: 3vh;
+    text-align: center;
+  }
+
+  .skills {
+    width: 80%;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+  }
+
+  .button_edit {
+    left: auto;
+    right: 10%;
+  }
 }
