@@ -243,7 +243,7 @@
   .job__details__fourth__section{
     display: flex;
     justify-content: flex-start;
-
+      gap: 15vw;
     align-items: center;
     height: 9vh;
     width: 80vw;
@@ -252,16 +252,7 @@
     margin-top: 2vh;
 
   }
-  .job__details__fourth__section__left__second{
-    width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  gap: 1vw;
-  font-size: 2.5vh;
-  font-weight: 600;
-  color: #333333;
-  margin-top: 1vh;
-  }
+ 
   .job__details__fourth__section__right {
     height: 8vh;
     width: 15vw;
@@ -269,5 +260,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
+  
 }
