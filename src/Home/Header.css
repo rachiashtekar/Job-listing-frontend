@@ -6,7 +6,8 @@
   gap: 55vw;
   align-items: center;
   border-radius: 0 0 8vh 8vh;
-  background-color: #ED5353;
+  /* background-color: #ED5353; */
+  background-color: #2ce2a2;
   margin-top: -8px;
 }
  
@@ -72,7 +73,8 @@
   height: 6vh;
   width: 9vw;
   background-color: white;
-  color: #ed5353;
+  /* color: #ed5353; */
+  color: #2ce2a2;
   border: 1px solid white;
   border-radius: 1vh;
   padding: 1vh 2vw;
@@ -88,7 +90,7 @@
   width: 40px;
   border-radius: 50%;
   text-align: center;
-  background-color: #ed5353;
+  /* background-color: #ed5353; */
  
 }
 .profile_icon{

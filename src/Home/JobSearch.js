@@ -5,7 +5,7 @@ import useJobContext from "../hooks/useJobContext";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import debounce from "lodash.debounce";
- import skills from "../Home/skillOptions";
+//  import skills from "../Home/skillOptions";
  import { baseURL } from "../Components/utils/baseURL";
 
 
@@ -20,24 +20,24 @@ const JobSearch = () => {
     getJobListings(searchTerm, selectedSkills);
   };
 
-  const handleSelectChange = (e) => {
-    const skill = e.target.value;
-    if (skill && !selectedSkills.includes(skill)) {
-      const updatedSkills = [...selectedSkills, skill];
-      setSelectedSkills(updatedSkills);
-      getJobListings(searchTerm, updatedSkills);
-    }
-  };
+  // const handleSelectChange = (e) => {
+  //   const skill = e.target.value;
+  //   if (skill && !selectedSkills.includes(skill)) {
+  //     const updatedSkills = [...selectedSkills, skill];
+  //     setSelectedSkills(updatedSkills);
+  //     getJobListings(searchTerm, updatedSkills);
+  //   }
+  // };
 
-  const handleRemoveSkill = (skill) => {
-    const updatedSkills = selectedSkills.filter((s) => s !== skill);
-    setSelectedSkills(updatedSkills);
-    getJobListings(searchTerm, updatedSkills);
-  };
+  // const handleRemoveSkill = (skill) => {
+  //   const updatedSkills = selectedSkills.filter((s) => s !== skill);
+  //   setSelectedSkills(updatedSkills);
+  //   getJobListings(searchTerm, updatedSkills);
+  // };
 
-  const clearSkills = () => {     setSelectedSkills([]);
-    getJobListings(searchTerm, []);
-  };
+  // const clearSkills = () => {     setSelectedSkills([]);
+  //   getJobListings(searchTerm, []);
+  // };
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -83,7 +83,7 @@ const JobSearch = () => {
           />
         </div>
       </form>
-      <div className="job__search__footer">
+      {/* <div className="job__search__footer">
         <div className="select-skills">
           <select value={selectedSkills} onChange={handleSelectChange}>
             <option value="">Select Skill</option>
@@ -109,7 +109,7 @@ const JobSearch = () => {
               Clear
             </button>
           )}
-        </div>
+        </div> */}
 
         {loggedIn && (
           <button className="add__job__btn" onClick={addJobButton}>
@@ -117,7 +117,7 @@ const JobSearch = () => {
           </button>
         )}
       </div>
-    </div>
+    // </div>
   );
 };
 

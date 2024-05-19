@@ -8,9 +8,12 @@
     align-items: center;
     text-align: centre;
   
-    -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
+    /* -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
     -moz-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-    box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
+    box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25); */
+    -webkit-box-shadow: 0px 0px 22px 2px rgba(145, 134, 134, 0.25);
+    -moz-box-shadow: 0px 0px 22px 2px rgba(145, 122, 122, 0.25);
+    box-shadow: 0px 0px 22px 2px rgba(163, 148, 148, 0.25);
   }
   
   .job__left__component {
@@ -48,6 +51,7 @@
     width: auto;
     font-weight: 500;
     color: rgba(224, 13, 55);
+
   }
   
   .second__div__footer > span:first-of-type {
@@ -114,7 +118,8 @@
     width: 10vw;
     border: none;
     border-radius: 1vh;
-    background-color: #ed5353;
+    /* background-color: #ed5353; */
+    background-color: #2ce2a2;
     color: white;
     font-weight: 600;
     font-size: 2.5vh;

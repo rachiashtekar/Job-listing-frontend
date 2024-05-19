@@ -13,11 +13,11 @@
 .user_profile {
   height: 150px;
   width: 80%;
-  color: #ed5353;
+  color:#2ce2a2;
 }
 
 h2 {
-  background-color: #ed5353;
+  background-color:#2ce2a2;
   color: white;
   height: 40px;
   width: 150px;
@@ -34,9 +34,12 @@ h2 {
   height: 150px;
   width: 60%;
   margin-top: 20px;
-  -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
+  /* -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
   -moz-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-  box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
+  box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25); */
+  -webkit-box-shadow: 0px 0px 22px 2px rgba(145, 134, 134, 0.25);
+    -moz-box-shadow: 0px 0px 22px 2px rgba(145, 122, 122, 0.25);
+    box-shadow: 0px 0px 22px 2px rgba(163, 148, 148, 0.25);
 }
 .information {
   padding: 10px;
@@ -46,11 +49,14 @@ h2 {
 d {
   font-size: 22px;
   font-weight: bold;
-  background-color: pink;
+  background-color:#2edfa1;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
+  /* -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
   -moz-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-  box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
+  box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25); */
+  -webkit-box-shadow: 0px 0px 22px 2px rgba(145, 134, 134, 0.25);
+    -moz-box-shadow: 0px 0px 22px 2px rgba(145, 122, 122, 0.25);
+    box-shadow: 0px 0px 22px 2px rgba(163, 148, 148, 0.25);
 }
 .job_container {
   margin-top: 10px;
@@ -70,9 +76,12 @@ d {
   justify-content: center;
   align-items: center;
   /* border: 2px solid red;  */
-  -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
+  /* -webkit-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
   -moz-box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
-  box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25);
+  box-shadow: 0px 0px 22px 2px rgba(255, 32, 32, 0.25); */
+  -webkit-box-shadow: 0px 0px 22px 2px rgba(145, 134, 134, 0.25);
+    -moz-box-shadow: 0px 0px 22px 2px rgba(145, 122, 122, 0.25);
+    box-shadow: 0px 0px 22px 2px rgba(163, 148, 148, 0.25);
 }
 .companyname {
   font-size: 18px;
@@ -157,7 +166,7 @@ d {
 }
 .edit {
   color: white;
-  background-color: #ed5353;
+  background-color: #2ce2a2;
   font-weight: bold;
   border: none;
   margin-top: 10px;
