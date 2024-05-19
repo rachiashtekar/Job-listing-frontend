@@ -1,105 +1,146 @@
-.edit__job{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* overflow: hidden; */
-    padding: 10px;
+.edit__job {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
 }
 
-.edit__job__left{
-    height: 100vh;
-    width: 55vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 2vw;
-    padding: 10px;
-
-   
+.edit__job__left {
+  height: 100vh;
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 2vw;
+  padding: 10px;
 }
 
-.job__form{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 50vw;
+.job__form {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 50vw;
 }
 
 .job__input {
-    height: 8vh;
-    width: 50vw;
-    display: flex;
-    justify-content: space-between;
-    padding:10px;
+  height: 8vh;
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .job__input > input {
-    height: 5vh;
-    width: 30vw;
-    align-self: flex-start;
-    border: #C2C2C2 1px solid;
-    color: #C2C2C2;
-    border-radius: 1vh;
-    padding: 5px;
+  height: 5vh;
+  width: 30vw;
+  align-self: flex-start;
+  border: #c2c2c2 1px solid;
+  color: #c2c2c2;
+  border-radius: 1vh;
+  padding: 5px;
 }
 
 .job__input > label {
-    font-weight: 600;
-    font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .job__input > select {
-    height: 6vh;
-    width: 15vw;
-    border: #C2C2C2 1px solid;
-    color: #C2C2C2;
-    border-radius: 1vh;
-    padding: 5px;
-    margin-right: 16vw;
+  height: 6vh;
+  width: 15vw;
+  border: #c2c2c2 1px solid;
+  color: #c2c2c2;
+  border-radius: 1vh;
+  padding: 5px;
+  margin-right: 16vw;
 }
 
 .job__input > textarea {
-    height: 8vh;
-    width: 30vw;
-    resize: none;
-    border: #C2C2C2 1px solid;
-    color: #C2C2C2;
-    border-radius: 1vh;
-    padding: 5px;
+  height: 8vh;
+  width: 30vw;
+  resize: none;
+  border: #c2c2c2 1px solid;
+  color: #c2c2c2;
+  border-radius: 1vh;
+  padding: 5px;
 }
 
-.edit__job__right{
-    background-image: url("../../src/assets/addJob.png");
-    height: 100vh;
-    width: 45vw;
-    color: white;
-    
-    
+.edit__job__right {
+  background-image: url("../../src/assets/addJob.png");
+  height: 100vh;
+  width: 45vw;
+  color: white;
 }
 
-.cancel__updateJob{
-height: 5.5vh;
-    width: 12vw;
-    background-color: #C2C2C2;
-    border-radius: 1vh;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    margin: 1vh 0 0 0;
+.cancel__updateJob {
+  height: 5.5vh;
+  width: 12vw;
+  background-color: #c2c2c2;
+  border-radius: 1vh;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  margin: 1vh 0 0 0;
 }
 
-.update__job__button{
-height: 5.5vh;
-    width: 12vw;
-    background-color:  #2ce2a2;
-    border-radius: 1vh;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    margin: 1vh 0 0 1vh;
-    cursor: pointer;
+.update__job__button {
+  height: 5.5vh;
+  width: 12vw;
+  background-color: #2ce2a2;
+  border-radius: 1vh;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  margin: 1vh 0 0 1vh;
+  cursor: pointer;
 }
-textarea{
-    padding: 10px;
+textarea {
+  padding: 10px;
 }
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .edit__job {
+      flex-direction: column;
+      padding: 5px;
+    }
+  
+    .edit__job__left, .edit__job__right {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+  
+    .job__form {
+      width: 90vw;
+      height: auto;
+    }
+  
+    .job__input {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding: 5px;
+    }
+  
+    .job__input > input,
+    .job__input > select,
+    .job__input > textarea {
+      width: 90vw;
+      height: auto;
+      margin: 5px 0;
+    }
+  
+    .job__input > select {
+      margin-right: 0;
+    }
+  
+    .cancel__updateJob,
+    .update__job__button {
+      width: 60vw;
+      height: 7vh;
+      font-size: 1rem;
+      margin: 2vh 0;
+    }
+  }
