@@ -97,6 +97,10 @@
   border-radius: 50%;
   color: white;
 }
+.reg_log_btn{
+  display:flex;
+  gap:2vw;
+}
 /* Media Queries for Mobile View */
 @media (max-width: 768px) {
   .header {
