@@ -42,14 +42,14 @@ const Header = () => {
             <button onClick={handleLogout}>Logout</button>
           </div>
         ) : (
-          <>
+          <div className="reg_log_btn">
             <button className="header__login" onClick={loginPage}>
               Login
             </button>
             <button className="header__register" onClick={signupPage}>
               Register
             </button>
-          </>
+          </div>
         )}
       </div>
     </div>
