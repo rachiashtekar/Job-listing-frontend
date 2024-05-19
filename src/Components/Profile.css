@@ -82,6 +82,7 @@ d {
   position: relative;
   top: 60px;
   margin-left: 30px;
+
 }
 .position {
   color: grey;
@@ -174,6 +175,10 @@ d {
     height: 100px;
     margin-left: 40px;
   }
+  .job_info_container{
+    height: 50%;
+  
+  }
 
   .user_profile {
     height: 130px;
@@ -205,12 +210,15 @@ d {
     left: 0;
     top: 0;
     width: auto;
+    align-items: center;
+    text-align: center;
   }
 
   .position,
   .salary {
     font-size: 3vh;
     text-align: center;
+    justify-content: center;
   }
 
   .skills {
@@ -222,6 +230,7 @@ d {
 
   .button_edit {
     left: auto;
-    right: 10%;
+    right: 20%;
+    /* bottom: 9%; */
   }
 }
