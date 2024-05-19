@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 .login_main_container{
     display: flex;
-    gap: 10vw;
+    gap: 32vw;
 }
 .title{
  font-family: "DM Sans", sans-serif;
@@ -51,7 +51,7 @@
     width: 500px;
 }
 .Job_image{
-    height:800px;
+    height:600px;
     width: 630px;
 
 }
