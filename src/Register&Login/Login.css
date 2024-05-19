@@ -38,7 +38,8 @@
     height: 200px;
     width: 330px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: flex-end;
     align-items: center;
     margin-left: 50px;
   
@@ -50,8 +51,8 @@
     width: 500px;
 }
 .Job_image{
-    height:469px;
-    width: 530px;
+    height:800px;
+    width: 630px;
 
 }
 .login_input{
