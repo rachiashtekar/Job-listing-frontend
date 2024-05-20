@@ -59,38 +59,36 @@
   width: 70%;
   height: 8vh;
 }
-/* Media Queries for Responsive Design */
-@media (max-width: 480px) {
-    .title {
-      font-size: 18px;
-      line-height: 25px;
-      margin-left: 5%;
+@media (max-width: 768px) {
+    .login_main_container {
+      flex-direction: column;
+      align-items: center;
+      gap: 2vw;
     }
-    .input_box {
-      margin-left: 5%;
-      padding: 5px;
+  
+    .title, .input_box, #login-button, .text {
+      margin-left: 0;
+      text-align: center;
     }
-    #login-button {
-      height: 30px;
-      width: 80px;
-      margin-left: 5%;
-    }
-    .text {
-      font-size: 12px;
-      margin-left: 5%;
-    }
+  
     .login-form-container {
+      margin-left: 0;
       margin-top: 5%;
-      padding: 0 3%;
     }
-    .Job_finder_image {
-      height: 25%;
-    }
-    .Job_image {
-      height: 40vh;
-    }
+  
     .login_input {
-      width: 95%;
-      height: 5vh;
+      width: 90%;
+      height: 6vh;
+    }
+  
+    .Job_finder_image {
+      order: 2;
+      height: auto;
+    }
+  
+    .Job_image {
+      order: 1;
+      height: auto;
+      width: 100%;
     }
   }
