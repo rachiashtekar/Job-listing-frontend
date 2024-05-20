@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import useJobContext from "../hooks/useJobContext";
@@ -7,13 +7,13 @@ import "./Profile.css";
 import { baseURL } from "./utils/baseURL";
 
 const Profile = () => {
-  const [user, setUser] = useState(null);
-  const [jobListings, setJobListings] = useState([]);
-  const { setLoading, loading } = useJobContext();
+  const { setLoading, loading, setUser, user } = useJobContext();
   const navigate = useNavigate();
+  const [jobListings, setJobListings] = useState([]);
 
   useEffect(() => {
     const fetchUserProfile = async () => {
+      setLoading(true);
       try {
         const token = localStorage.getItem("token");
 
@@ -21,26 +21,23 @@ const Profile = () => {
           throw new Error("No token found");
         }
 
-        const userResponse = await axios.get(
-          `${baseURL}/api/v1/auth/profile`,
-          {
-            headers: {
-              Authorization: token,
-            },
-          }
-        );
+        const userResponse = await axios.get(`${baseURL}/api/v1/auth/profile`, {
+          headers: {
+            Authorization: token,
+          },
+        });
 
-        setUser(userResponse.data);
+        setUser(userResponse.data); // Set user data in context
         setJobListings(userResponse.data.jobListings);
-        setLoading(false);
       } catch (error) {
         console.error("Error fetching user profile:", error);
+      } finally {
         setLoading(false);
       }
     };
 
     fetchUserProfile();
-  }, [setLoading]);
+  }, [setLoading, setUser]);
 
   const getJobDetails = (id) => {
     navigate(`/editJob/${id}`);
@@ -99,9 +96,7 @@ const Profile = () => {
                           <p className="job_info">{job.jobLocation}</p>
                         </div>
                         <div className="skills">
-                          <p className="job_info">
-                            {job.skillsRequired.join(", ")}
-                          </p>
+                          <p className="job_info">{job.skillsRequired.join(", ")}</p>
                         </div>
                       </div>
                     </li>
@@ -121,6 +116,5 @@ const Profile = () => {
 };
 
 export default Profile;
-
 
 

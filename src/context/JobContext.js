@@ -1,4 +1,3 @@
-//usecontext hook
 import { createContext, useState } from "react";
 
 const JobContext = createContext({
@@ -6,6 +5,8 @@ const JobContext = createContext({
   setLoggedIn: () => {},
   loading: false,
   setLoading: () => {},
+  user: null, // Add user state
+  setUser: () => {}, // Add setUser function
 });
 
 const Provider = ({ children }) => {
@@ -13,6 +14,7 @@ const Provider = ({ children }) => {
   const [jobListings, setJobListings] = useState([]);
   const [jobId, setJobId] = useState("");
   const [loading, setLoading] = useState(false);
+  const [user, setUser] = useState(null); // Add user state
 
   const valueToShare = {
     loggedIn,
@@ -23,6 +25,8 @@ const Provider = ({ children }) => {
     setJobId,
     loading,
     setLoading,
+    user, // Add user to the context value
+    setUser, // Add setUser to the context value
   };
 
   return (
@@ -31,6 +35,4 @@ const Provider = ({ children }) => {
 };
 
 export { Provider };
-
 export default JobContext;
-
