@@ -67,7 +67,7 @@
     }
   
     .title, .input_box, #login-button, .text {
-      margin-left: 0;
+      margin-left: 5%;
       text-align: center;
     }
   
@@ -90,5 +90,6 @@
       order: 1;
       height: auto;
       width: 100%;
+      margin-left: 5%;
     }
   }
