@@ -3,7 +3,7 @@ import "./Login.css";
 import loginImage from "../../src/assets/userpage.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import toast from "react-hot-toast";
+import toast,{Toaster} from "react-hot-toast";
 import { baseURL } from "../Components/utils/baseURL";
 function Login() {
   const [email, setEmail] = useState("");
@@ -22,16 +22,21 @@ function Login() {
       const success = response.data.success;
 
       if (!success) {
-        toast.error("Incorrect email or password");
-        navigate("/login"); // Redirect to login page
+        toast.error("Incorrect email or password",{
+          position:"top-center",
+          autoClose:2000,});
+        
       } else {
         localStorage.setItem("token", response.data.token);
-        toast.success("Login successful");
+        toast.success("Login successful",{
+          position:"top-center",
+          autoClose:2000,
+        })
         navigate("/"); // Redirect to home page
       }
 
-      toast.success("Login successful");
-      navigate("/");
+      // toast.success("Login successful");
+      // navigate("/");
 
       // Redirect to the Profile page
     } catch (error) {
@@ -40,7 +45,7 @@ function Login() {
   };
   return (
     <div className="login_main_container">
-      
+      <Toaster/>
         <div className="login-form-container">
           <div className="forms">
             <div className="form-content">

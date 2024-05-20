@@ -21,7 +21,8 @@ const JobContainer = () => {
         </div>
       ) : (
         // <NoResultsFound />
-     <p>loading.....</p>
+    //  <p>loading.....</p>
+    <p style={{fontSize:"20px",marginLeft:"10%",color:"green"}}>"Welcome to JobListing: Your Gateway to New Beginnings!"</p>
       )}
     </div>
   );

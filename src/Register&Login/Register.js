@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import toast from "react-hot-toast";
+import toast ,{Toaster}from "react-hot-toast";
 import React, { useState } from "react";
 import  loginImage  from "../../src/assets/userpage.png";
 import { baseURL } from "../Components/utils/baseURL";
@@ -35,18 +35,25 @@ const Register = () => {
         }
       );
       if (response && response.data.success)
-        toast.success("Account created successfully");
+        toast.success("Account created successfully",{
+          position: "top-center",
+          autoClose: 2000,
+        });
 
       navigate("/login");
     } catch (error) {
       console.log(error);
 
-      toast.error("Account not created");
+      toast.error("Account not created",{
+        position: "top-center",
+        autoClose: 2000,
+      });
     }
   };
 
   return (
     <div className="Registration_main_container">
+      <Toaster/>
       <div className="registration_container">
         <div className="title_registration">Create an Account</div>
         <div className="input-box">
