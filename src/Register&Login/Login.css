@@ -7,8 +7,6 @@
 .login_main_container {
   display: flex;
   gap: 6vw;
-
-
 }
 .title {
   font-family: "DM Sans", sans-serif;
@@ -38,7 +36,6 @@
   margin-left: 10%;
 }
 .login-form-container {
-
   height: 100%;
   width: 100%;
 
@@ -54,7 +51,7 @@
   height: 50%;
   width: 100%;
 }
-.Job_image{
+.Job_image {
   height: 97vh;
   width: 100%;
 }
@@ -62,3 +59,38 @@
   width: 70%;
   height: 8vh;
 }
+/* Media Queries for Responsive Design */
+@media (max-width: 480px) {
+    .title {
+      font-size: 18px;
+      line-height: 25px;
+      margin-left: 5%;
+    }
+    .input_box {
+      margin-left: 5%;
+      padding: 5px;
+    }
+    #login-button {
+      height: 30px;
+      width: 80px;
+      margin-left: 5%;
+    }
+    .text {
+      font-size: 12px;
+      margin-left: 5%;
+    }
+    .login-form-container {
+      margin-top: 5%;
+      padding: 0 3%;
+    }
+    .Job_finder_image {
+      height: 25%;
+    }
+    .Job_image {
+      height: 40vh;
+    }
+    .login_input {
+      width: 95%;
+      height: 5vh;
+    }
+  }
