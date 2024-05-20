@@ -38,7 +38,7 @@
   margin-left: 50px;
 
   margin-top: 5%;
-  border: 2px solid red;
+  
 }
 .input-box {
   width: 500px;
@@ -64,4 +64,43 @@ input[type="checkbox"] {
  width: 10px;
   height: 10px;
   margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .Registration_main_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .title_registration, .input-box, #register-button, .register-text {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .registration_container {
+    margin-left: 0;
+    margin-top: 5%;
+    width: 90%;
+    border-width: 1px;
+  }
+
+  .input-box {
+    width: 90%;
+  }
+
+  .input {
+    width: 90%;
+    height: 40px;
+  }
+
+  .Job_finder_registration_image {
+    order: 2;
+    height: auto;
+  }
+
+  .Job_registration_image {
+    order: 1;
+    height: auto;
+    width: 100%;
+  }
 }
