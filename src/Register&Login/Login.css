@@ -1,79 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.login_main_container{
-    display: flex;
-    gap: 6vw;
-    
-    border: 2px solid red;
- 
+.login_main_container {
+  display: flex;
+  gap: 6vw;
+
+
 }
-.title{
- font-family: "DM Sans", sans-serif;
- font-weight: 700;
- font-size: 25px;
- text-align: left;
- line-height: 57.61px;
- margin-left: 120px;
+.title {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: left;
+  line-height: 57.61px;
+  margin-left: 10%;
 }
 
-.input_box{
-    padding: 5px;
-    margin-left: 120px;
-    
+.input_box {
+  padding: 8px;
+  margin-left: 10%;
 }
+
 #login-button {
-    background: #2ce2a2;
-    color: white;
-    border: none;
-    height: 28px;
-    width: 80px;
-    border-radius: 5px;
-    margin-left: 120px;
+  background: #2ce2a2;
+  color: white;
+  border: none;
+  height: 28px;
+  width: 80px;
+  border-radius: 5px;
+  margin-left: 10%;
+}
+.text {
+  font-size: 16px;
+  margin-left: 10%;
+}
+.login-form-container {
 
-    
-    
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  margin-left: 50px;
+
+  margin-top: 10%;
 }
-.text{
-    font-size: 16px;
-    margin-left: 120px;
-}
-.login-form-container{
-    border: 2px solid red;
-    /* height: 200px; */
-    height: 100%;
-    width: 100%;
-    /* width: 330px; */
-    display: flex;
-    justify-content: center;
-    /* justify-content: flex-end; */
-    align-items: center;
-    margin-left: 50px;
-  
-    margin-top: 120px;
-   
-}
-.Job_finder_image{
-    height:50%;
-    width: 100%;
-    border: 2px solid red;
-    /* justify-content: flex-end; */
-  
+.Job_finder_image {
+  height: 50%;
+  width: 100%;
 }
 .Job_image{
-    /* height:auto;
-    width: 500px; */
   height: 97vh;
-    width: 100%;
-
+  width: 100%;
 }
-.login_input{
-    width: 50%;
-    height: 50%;
-    
-
-
+.login_input {
+  width: 70%;
+  height: 8vh;
 }
