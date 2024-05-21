@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast ,{Toaster}from "react-hot-toast";
 import React, { useState } from "react";
-// import  loginImage  from "../../src/assets/userpage.png";
 import JobFinder from "../assets/Job-finder.jpeg"
 import { baseURL } from "../Components/utils/baseURL";
 import "./Register.css";
