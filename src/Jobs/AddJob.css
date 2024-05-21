@@ -14,13 +14,15 @@
     align-items: center;
     margin: 0 2vw;
   }
-  .job_input{
+  /* .job_input{
   height: 8vh;
   width: 50vw;
   display: flex;
-  justify-content: space-between;
-  padding: 32px;
-  }
+  justify-content: flex-start;
+  padding: 12px;
+  padding-left: 12px;
+  margin-left: 12px;
+  } */
   
   .job__form {
     display: flex;
