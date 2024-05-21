@@ -115,7 +115,7 @@ const AddJob = () => {
     <div className="add__job">
       <Toaster />
       <div className="add__job__left">
-        <h2>Add Job Here</h2>
+        <h2>Add Job </h2>
         <form className="job__form" onSubmit={handleSubmit}>
           <div className="job__input">
             <label htmlFor="companyName">Company Name</label>
