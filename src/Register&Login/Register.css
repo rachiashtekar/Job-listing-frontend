@@ -47,6 +47,7 @@
 .input {
   width: 300px;
   height: 32px;
+  border-radius: 5px;
 }
 .Job_finder_registration_image{
   height: 50%;
@@ -91,6 +92,7 @@ input[type="checkbox"] {
   .input {
     width: 90%;
     height: 40px;
+    border-radius: 5px;
   }
 
   .Job_finder_registration_image {

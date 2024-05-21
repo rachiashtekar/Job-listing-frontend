@@ -2,7 +2,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast ,{Toaster}from "react-hot-toast";
 import React, { useState } from "react";
-import  loginImage  from "../../src/assets/userpage.png";
+// import  loginImage  from "../../src/assets/userpage.png";
+import JobFinder from "../assets/Job-finder.jpeg"
 import { baseURL } from "../Components/utils/baseURL";
 import "./Register.css";
 
@@ -122,7 +123,7 @@ const Register = () => {
         </div>
       </div>
       <div className="Job_finder_registration_image">
-        <img className="Job_registration_image" src={loginImage } alt="login-web" />
+        <img className="Job_registration_image" src={JobFinder } alt="login-web" />
       </div>
     </div>
   );

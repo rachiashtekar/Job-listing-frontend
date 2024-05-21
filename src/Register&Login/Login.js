@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
-import loginImage from "../../src/assets/userpage.png";
+// import loginImage from "../../src/assets/userpage.png";
+import JobFinder from "../assets/Job-finder.jpeg"
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast,{Toaster} from "react-hot-toast";
@@ -50,7 +51,7 @@ function Login() {
           <div className="forms">
             <div className="form-content">
               <div className="login-form">
-                <div className="title">Already have an account?</div>
+                <div className="title">Welcome to job-listing Platform</div>
 
                 <div className="input-boxes">
                   <div className="input_box">
@@ -102,7 +103,7 @@ function Login() {
         </div>
     
       <div className="Job_finder_image">
-        <img className="Job_image" src={loginImage} alt="login-web" />
+        <img className="Job_image" src={JobFinder} alt="login-web" />
       </div>
     </div>
   );
