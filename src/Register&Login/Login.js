@@ -78,7 +78,7 @@ function Login() {
                     <input
                       id="login-button"
                       type="button"
-                      defaultValue="Sign In"
+                      defaultValue="Login"
                       onClick={handleLogin}
                     />
                   </div>
