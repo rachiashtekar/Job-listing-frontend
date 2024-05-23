@@ -123,6 +123,7 @@ textarea {
     .edit__job__right {
       background-image: none;
       height: 0%;
+      display: none;
     }
   
   
