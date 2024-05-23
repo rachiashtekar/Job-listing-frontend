@@ -11,7 +11,7 @@
 }
 .title_registration {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 57.61px;
   margin-left: 10px;
   
@@ -38,7 +38,7 @@
   justify-content: center;
 
   align-items: center;
-  margin-left: 50px;
+  margin-left: 10%;
 
   margin-top: 5%;
   
@@ -48,8 +48,8 @@
   padding: 8px;
 }
 .input {
-  width: 300px;
-  height: 32px;
+  width: 80%;
+  height: 8vh;
   padding: 10px;
   border-radius: 5px solid gray;
 }
@@ -66,12 +66,18 @@ input::placeholder {
 }
 input[type="checkbox"] {
   border-radius: 0.5rem;
- width: 10px;
-  height: 10px;
-  margin-left: 10px;
+ width: 13px;
+  height: 13px;
+  margin-left: 1px;
 }
 .reg_p{
   padding-top: 3px;
+}
+.checkbox_div{
+  max-width: 75%;
+  margin-left: 9px;
+  /* border: 2px solid red; */
+
 }
 @media (max-width: 768px) {
   .Registration_main_container {

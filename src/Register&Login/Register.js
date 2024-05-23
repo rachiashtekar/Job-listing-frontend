@@ -98,7 +98,7 @@ const Register = () => {
 
         <div className="checkbox_div">
           <input type="checkbox" />
-          <label style={{ fontSize: "11px", fontWeight: "300",marginLeft:"8px" }}>
+          <label style={{ fontSize: "16px", fontWeight: "300",marginLeft:"8px" }}>
             By creating an account, I agree to our terms of use and privacy
             policy
           </label>
@@ -112,7 +112,7 @@ const Register = () => {
           />
         </div>
         <div className="register-text">
-        <p className="reg_p" style={{fontSize:"12px"}}> Already have an account?</p> 
+        <p className="reg_p" style={{fontSize:"16px"}}> Already have an account?</p> 
           <span
             style={{ color: "black", cursor: "pointer", fontWeight: "bold" }}
             onClick={() => navigate("/login")}
