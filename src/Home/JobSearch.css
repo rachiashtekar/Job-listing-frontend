@@ -124,4 +124,9 @@ input::placeholder {
     font-weight: 700;
     border: none;
   }
+  .search-bar > img {
+    height: 4vh;
+    width: 4vh;
+    padding-left: 1vw;
+  }
 }
