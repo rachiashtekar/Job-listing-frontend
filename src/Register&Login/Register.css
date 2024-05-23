@@ -69,6 +69,9 @@ input[type="checkbox"] {
   height: 10px;
   margin-left: 10px;
 }
+.reg_p{
+  padding-top: 3px;
+}
 @media (max-width: 768px) {
   .Registration_main_container {
     display: flex;
@@ -135,5 +138,8 @@ input[type="checkbox"] {
     max-width: 80%;
     margin-left: 25px;
   
+  }
+  .reg_p{
+    padding-top: 3px;
   }
 }
