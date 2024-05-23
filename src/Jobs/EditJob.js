@@ -141,11 +141,12 @@ const EditJob = () => {
     <div className="edit__job">
      
          <div className="edit__job__left">
-        <h3 style={{height:"40px",width:"100px",padding:"10px", backgroundColor: "#2ce2a2" ,color:"white",borderRadius:"2px"}}>Edit Job</h3>
+        <h3 style={{height:"40px",width:"100px",padding:"6px", backgroundColor: "#2ce2a2" ,color:"white",borderRadius:"2px",textAlign:"center",marginTop:"-6px"}}>Edit Job</h3>
         <form className="job__form" onSubmit={handleSubmit}>
           <div className="job__input">
             <label htmlFor="companyName">Company Name</label>
             <input
+            className="edit_input"
               type="text"
               placeholder="Company Name"
               value={companyName}
@@ -156,6 +157,7 @@ const EditJob = () => {
           <div className="job__input">
             <label htmlFor="jobPosition">Job Position</label>
             <input
+            className="edit_input"
               type="text"
               placeholder="Job Position"
               value={jobPosition}
@@ -165,6 +167,7 @@ const EditJob = () => {
           <div className="job__input">
             <label htmlFor="monthlySalary">Monthly Salary</label>
             <input
+            className="edit_input"
               type="text"
               placeholder="Monthly Salary"
               value={monthlySalary}
@@ -173,7 +176,7 @@ const EditJob = () => {
           </div>
           <div className="job__input">
             <label htmlFor="jobType">Job Type</label>
-            <select value={jobType} onChange={handleJobTypeChange}>
+            <select className="select_edit" value={jobType} onChange={handleJobTypeChange}>
               <option value="">Select Job Type</option>
               <option value="Internship">Internship</option>
               <option value="Full Time">Full Time</option>
@@ -181,7 +184,7 @@ const EditJob = () => {
           </div>
           <div className="job__input">
             <label htmlFor="remoteOnsite">Remote/Onsite</label>
-            <select value={remoteOnsite} onChange={handleRemoteOnsiteChange}>
+            <select className="select_edit" value={remoteOnsite} onChange={handleRemoteOnsiteChange}>
               <option value="">Select Remote/Onsite</option>
               <option value="Remote">Remote</option>
               <option value="In Office">In Office</option>
@@ -191,6 +194,7 @@ const EditJob = () => {
           <div className="job__input">
             <label htmlFor="jobLocation">Job Location</label>
             <input
+            className="edit_input"
               type="text"
               placeholder="Job Location"
               value={jobLocation}
@@ -202,6 +206,7 @@ const EditJob = () => {
           <div className="job__input">
             <label htmlFor="jobDescription">Job Description</label>
             <textarea
+            className="edit_input"
             placeholder="Job Description"
               value={jobDescription}
               onChange={(e) => setJobDescription(e.target.value)}
@@ -210,6 +215,7 @@ const EditJob = () => {
           <div className="job__input">
             <label htmlFor="aboutCompany">About Company</label>
             <textarea
+            className="edit_input"
               placeholder="About Company"
               value={aboutCompany}
               onChange={(e) => setAboutCompany(e.target.value)}
@@ -218,6 +224,7 @@ const EditJob = () => {
           <div className="job__input">
             <label htmlFor="skillsRequired">Skills Required</label>
             <input
+            className="edit_input"
               type="text"
               placeholder="Skills Required"
               value={skillsRequired}
