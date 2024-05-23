@@ -110,6 +110,8 @@ input::placeholder {
     width: 30vw;
     height: 5vh;
     font-size: 1rem;
+    cursor: pointer;
+  margin-left: 73%;
   }
 
   .select-skills > select {
