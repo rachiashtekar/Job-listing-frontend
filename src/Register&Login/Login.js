@@ -90,6 +90,7 @@ function Login() {
                         color: "black",
                         cursor: "pointer",
                         fontWeight: "bold",
+                        
                       }}
                       onClick={() => navigate("/register")}
                     >

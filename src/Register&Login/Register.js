@@ -117,7 +117,7 @@ const Register = () => {
             style={{ color: "black", cursor: "pointer", fontWeight: "bold" }}
             onClick={() => navigate("/login")}
           >
-            Sign In
+            Login
           </span>
         </div>
       </div>

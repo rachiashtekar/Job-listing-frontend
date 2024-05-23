@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 *{
   margin: 0;
@@ -13,7 +14,7 @@
   font-size: 25px;
   line-height: 57.61px;
   margin-left: 10px;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Merriweather", serif;
 }
 
 #register-button {
@@ -26,6 +27,7 @@
 }
 .register-text {
   display: flex;
+  margin-left: 10px;
   gap: 6px;
 }
 .registration_container {
@@ -47,7 +49,8 @@
 .input {
   width: 300px;
   height: 32px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 5px solid gray;
 }
 .Job_finder_registration_image{
   height: 50%;
@@ -92,7 +95,8 @@ input[type="checkbox"] {
   .input {
     width: 90%;
     height: 40px;
-    border-radius: 5px;
+    padding: 10px;
+  border-radius: 5px solid gray;
   }
 
   .Job_finder_registration_image {
@@ -104,5 +108,19 @@ input[type="checkbox"] {
     order: 1;
     height: auto;
     width: 100%;
+  }
+  .checkbox{
+    font-size: 11px;
+    font-weight: 300;
+    margin-left: 10px;
+  }
+  input[type="checkbox"] {
+    border-radius: 0.5rem;
+    width: 10px;
+    height: 10px;
+    margin-left: 26px;
+  }
+  .register-text{
+    margin-left: 30px;
   }
 }
