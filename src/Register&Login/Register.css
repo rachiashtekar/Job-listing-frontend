@@ -1,30 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.Registration_main_container{
+.Registration_main_container {
   display: flex;
-  gap:6vw;
+  gap: 6vw;
 }
 .title_registration {
   font-weight: 700;
   font-size: 30px;
   line-height: 57.61px;
   margin-left: 10px;
-  
+
   font-family: "Merriweather", serif;
 }
 
 #register-button {
-  background:#2ce2a2;
+  background: #2ce2a2;
   color: white;
   border: none;
   height: 28px;
   width: 110px;
   border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
 }
 .register-text {
   display: flex;
@@ -34,14 +36,10 @@
 .registration_container {
   height: 100%;
   width: 100%;
- 
   justify-content: center;
-
   align-items: center;
   margin-left: 10%;
-
   margin-top: 5%;
-  
 }
 .input-box {
   width: 500px;
@@ -53,7 +51,7 @@
   padding: 10px;
   border-radius: 5px solid gray;
 }
-.Job_finder_registration_image{
+.Job_finder_registration_image {
   height: 50%;
   width: 100%;
 }
@@ -66,18 +64,17 @@ input::placeholder {
 }
 input[type="checkbox"] {
   border-radius: 0.5rem;
- width: 13px;
+  width: 13px;
   height: 13px;
   margin-left: 1px;
 }
-.reg_p{
+.reg_p {
   padding-top: 3px;
 }
-.checkbox_div{
+.checkbox_div {
   max-width: 75%;
   margin-left: 9px;
   /* border: 2px solid red; */
-
 }
 @media (max-width: 768px) {
   .Registration_main_container {
@@ -85,16 +82,17 @@ input[type="checkbox"] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
     gap: 2vw;
   }
 
- .input-box, #register-button, .register-text {
+  .input-box,
+  #register-button,
+  .register-text {
     margin-left: 0;
     text-align: center;
-    
   }
-  .title_registration{
+  .title_registration {
     align-items: center;
     text-align: center;
     margin-left: -26px;
@@ -105,7 +103,6 @@ input[type="checkbox"] {
     margin-top: 5%;
     width: 90%;
     border-width: 1px;
-  
   }
 
   .input-box {
@@ -116,7 +113,7 @@ input[type="checkbox"] {
     width: 90%;
     height: 40px;
     padding: 10px;
-  border-radius: 5px solid gray;
+    border-radius: 5px solid gray;
   }
 
   .Job_finder_registration_image {
@@ -129,30 +126,26 @@ input[type="checkbox"] {
     height: auto;
     width: 100%;
   }
-  .checkbox{
+  .checkbox {
     font-size: 11px;
     font-weight: 300;
     margin-left: 10px;
   }
   input[type="checkbox"] {
     border-radius: 0.5rem;
-   max-width: 10px;
+    max-width: 10px;
     height: 10px;
     margin-left: 4px;
     align-items: center;
-    
   }
-  .register-text{
-    margin-left: 30px
-   
-    
+  .register-text {
+    margin-left: 30px;
   }
-  .checkbox_div{
+  .checkbox_div {
     max-width: 80%;
     margin-left: 25px;
-  
   }
-  .reg_p{
+  .reg_p {
     padding-top: 3px;
   }
 }
