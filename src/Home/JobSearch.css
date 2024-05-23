@@ -115,4 +115,11 @@ input::placeholder {
   .select-skills > select {
     width: 90vw;
   }
+  .search-bar > input {
+    width: 64vw;
+    padding: 2vh 1vw;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: none;
+  }
 }
