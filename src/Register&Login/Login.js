@@ -47,6 +47,7 @@ function Login() {
   return (
     <div className="login_main_container">
       <Toaster/>
+      {/* <div className="title_login">Welcome to job-listing Platform</div> */}
         <div className="login-form-container">
           <div className="forms">
             <div className="form-content">
