@@ -115,11 +115,16 @@ textarea {
       padding: 5px;
     }
   
-    .edit__job__left, .edit__job__right {
+    .edit__job__left {
       width: 100%;
       height: auto;
       margin: 0;
     }
+    .edit__job__right {
+      background-image: none;
+      height: 0%;
+    }
+  
   
     .job__form {
       width: 90vw;
