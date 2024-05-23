@@ -75,6 +75,7 @@ input[type="checkbox"] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
     gap: 2vw;
   }
 
@@ -84,10 +85,11 @@ input[type="checkbox"] {
   }
 
   .registration_container {
-    margin-left: 0;
+    margin-left: 7%;
     margin-top: 5%;
     width: 90%;
     border-width: 1px;
+    /* border: 2px solid red; */
   }
 
   .input-box {
