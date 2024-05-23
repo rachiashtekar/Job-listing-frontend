@@ -72,7 +72,7 @@ input[type="checkbox"] {
   padding-top: 0px;
 }
 .checkbox_div {
-  max-width: 66%;
+  max-width: 84%;
   margin-left: 9px;
   /* border: 2px solid red; */
 }
@@ -84,6 +84,16 @@ input[type="checkbox"] {
     justify-content: center;
 
     gap: 2vw;
+  }
+  #register-button {
+    background: #2ce2a2;
+    color: white;
+    border: none;
+    height: 28px;
+    width: 40%;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
   }
 
   .input-box,
