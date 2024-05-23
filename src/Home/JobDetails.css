@@ -32,8 +32,8 @@
 }
 
 .job__details__lower {
-  height: auto;
-  width: 70vw;
+  max-height: 700px;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,7 +68,7 @@
 }
 
 .job__details__second__section > span {
-  font-size: 8vh;
+  font-size: 4vh;
   font-weight: 600;
   color: #333333;
 }
@@ -173,39 +173,57 @@
 
 .job__details__fifth__section {
   text-align: left;
-  margin-left: 2vw;
+  margin-left: 1vw;
   margin-right: 2vw;
+  max-width: 70%;
+  max-height: 70%;
+  padding: 10px;
+  
 }
 
 .job__details__sixth__section {
   text-align: left;
-  margin-left: 2vw;
+  margin-left: 1vw;
   margin-right: 2vw;
+  max-width: 70%;
+  max-height: 70%;
+
+  padding: 10px;
 }
+
 
 .job__details__seventh__section {
   text-align: left;
-  margin-left: 2vw;
+  margin-left: 1vw;
+  max-width: 70%;
+  max-height: 70%;
+  padding: 10px;
+  
 }
 
 .job__details__seventh__section__skills {
   display: flex;
   flex-wrap: wrap;
+  gap: 0.5vw;
+  
+ 
 }
 
+
 .job__details__seventh__section__skills > span {
-  font-size: 2vh;
-  font-weight: 600;
-  color: #333333;
-  /* background-color: #ffeeee; */
-  padding: 5px 10px;
-  /* margin: 2px 10px; */
+  font-size: 2.7vh;
+  font-weight: 300;
+  padding:10px;
+  
 }
 
 .job__details__eighth__section {
   text-align: left;
-  margin-left: 2vw;
+  margin-left: 1vw;
   margin-right: 2vw;
+  max-width: 70%;
+  max-height: 70%;
+  padding: 10px;
 }
 @media only screen and (max-width: 768px) {
   .job__details__container {
@@ -269,6 +287,7 @@
     font-size: 2vh;
     font-weight: 600;
     color: #333333;
+   
 
     padding: 5px 10px;
   }

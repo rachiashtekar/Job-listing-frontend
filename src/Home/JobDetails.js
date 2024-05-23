@@ -85,15 +85,15 @@ const JobDetails = ({job}) => {
                 </div>
               </div>
             </div>
-            <div style={{height:"50px" }} className="job__details__fifth__section">
+            <div style={{maxHeight:"50%", maxWidth:"70vw" }} className="job__details__fifth__section">
               <h4>About Company</h4>
               <p>{jobDetails.aboutCompany}</p>
             </div>
-            <div style={{height:"50px" }} className="job__details__sixth__section">
-              <h4>About the job/internship</h4>
+            <div style={{maxHeight:"50%", maxWidth:"70vw" }} className="job__details__sixth__section">
+              <h4>About the job/Internship</h4>
               <p>{jobDetails.jobDescription}</p>
             </div>
-            <div style={{height:"50px" }} className="job__details__seventh__section">
+            <div style={{maxHeight:"50%", maxWidth:"70vw" }} className="job__details__seventh__section">
               <h4>Skills Required</h4>
               <div className="job__details__seventh__section__skills">
                 {jobDetails.skillsRequired?.map((skill) => {
@@ -102,7 +102,7 @@ const JobDetails = ({job}) => {
                 })}
               </div>
             </div>
-            <div style={{height:"50px" }} className="job__details__eighth__section">
+            <div style={{maxHeight:"50%", maxWidth:"70vw" }} className="job__details__eighth__section">
               <h4>Additional Information</h4>
               <p>Number of openings 2</p>
             </div>
