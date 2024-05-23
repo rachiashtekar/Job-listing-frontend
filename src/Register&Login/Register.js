@@ -96,7 +96,7 @@ const Register = () => {
           />
         </div>
 
-        <div>
+        <div className="checkbox_div">
           <input type="checkbox" />
           <label style={{ fontSize: "11px", fontWeight: "300",marginLeft:"8px" }}>
             By creating an account, I agree to our terms of use and privacy
