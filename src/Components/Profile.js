@@ -47,7 +47,7 @@ const Profile = () => {
     <div className="user_container">
       <h2>User Profile</h2>
       {loading ? (
-        <p>Loading...</p>
+        <p style={{textAlign:"center",alignItems:"center",marginTop:"30vh",fontSize:"3rem"}}>Loading...</p>
       ) : user ? (
         <div>
           <div className="main_container">
@@ -104,12 +104,12 @@ const Profile = () => {
                 </div>
               </ul>
             ) : (
-              <p>No job listings available</p>
+              <p style={{textAlign:"center",alignItems:"center",marginTop:"30vh",fontSize:"3rem"}} >No job listings available</p>
             )}
           </div>
         </div>
       ) : (
-        <p>No user data available</p>
+        <p style={{textAlign:"center",alignItems:"center",marginTop:"30vh",fontSize:"3rem"}}>No user data available</p>
       )}
     </div>
   );

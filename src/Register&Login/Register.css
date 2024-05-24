@@ -27,6 +27,7 @@
   border-radius: 5px;
   font-weight: 700;
   font-size: 15px;
+  cursor: pointer;
 }
 .register-text {
   display: flex;
@@ -67,6 +68,7 @@ input[type="checkbox"] {
   width: 13px;
   height: 13px;
   margin-left: 1px;
+  cursor: pointer;
 }
 .reg_p {
   padding-top: 0px;

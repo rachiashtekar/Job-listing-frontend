@@ -166,6 +166,7 @@ d {
   height: 30px;
   width: 80px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .container {
   margin-left: 1px;
