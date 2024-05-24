@@ -125,6 +125,19 @@
       max-width: 90%;
     }
     .text{
-      margin-left: -19%;
+      margin-left: 3%;
+    }
+    #login-button {
+      background: #2ce2a2;
+      color: white;
+      border: none;
+      height: 39px;
+      width: 122px;
+      border-radius: 5px;
+      margin-left: 17%;
+      font-weight: 700;
+      
+      font-size: 20px;
+      cursor: pointer;
     }
   }

@@ -158,6 +158,17 @@ input[type="checkbox"] {
     margin-left: 25px;
   }
   .reg_p {
-    padding-top: 3px;
+    padding-top: 0px;
+  }
+  #register-button {
+    background: #2ce2a2;
+    color: white;
+    border: none;
+    height: 33px;
+    width: 55%;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 19px;
+    cursor: pointer;
   }
 }
