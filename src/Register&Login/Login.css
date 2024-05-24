@@ -32,18 +32,18 @@
   background: #2ce2a2;
   color: white;
   border: none;
-  height: 28px;
-  width: 80px;
+  height: 40px;
+  width: 137px;
   border-radius: 5px;
-  margin-left: 11%;
+  margin-left: 28%;
   font-weight: 700;
   
-  font-size: 15px;
+  font-size: 20px;
   cursor: pointer;
 }
 .text {
   font-size: 16px;
-  margin-left: 10%;
+  margin-left: 23%;
 }
 .login-form-container {
   height: 100%;
