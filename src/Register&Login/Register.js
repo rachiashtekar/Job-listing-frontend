@@ -112,9 +112,9 @@ const Register = () => {
           />
         </div>
         <div className="register-text">
-        <p className="reg_p" style={{fontSize:"16px"}}> Already have an account?</p> 
+        <p className="reg_p" style={{fontSize:"18px"}}> Already have an account?</p> 
           <span
-            style={{ color: "black", cursor: "pointer", fontWeight: "bold" }}
+            style={{ color: "black", cursor: "pointer", fontWeight: "bold",fontSize:"18px" }}
             onClick={() => navigate("/login")}
           >
             Sign In

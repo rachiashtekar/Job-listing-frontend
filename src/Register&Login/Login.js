@@ -91,6 +91,7 @@ function Login() {
                         color: "black",
                         cursor: "pointer",
                         fontWeight: "bold",
+                        fontSize:"18px"
                         
                       }}
                       onClick={() => navigate("/register")}
