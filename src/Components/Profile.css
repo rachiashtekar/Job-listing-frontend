@@ -169,21 +169,25 @@ d {
   margin-left: 1px;
 }
 /* Media Queries for Mobile View */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .profile_container {
     width: 120px;
     height: 100px;
     margin-left: 40px;
   }
   .job_info_container{
-    height: 50%;
-    width: 100%;
+    min-height: 35vh;
+    min-width: 82vw;
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+
   
   }
 
   .user_profile {
     height: 130px;
     width: 100%;
+    margin-left: -19px;
   }
 
   .h2 {
@@ -206,11 +210,13 @@ d {
   .remoteonsite,
   .location,
   .skills {
-    position: static;
+    position: relative;
+    top: 0;
     margin: 10px 0;
     left: 0;
-    top: 0;
+    top: -26px;
     width: auto;
+    margin-top: 10px;
     align-items: center;
     text-align: center;
   }
@@ -220,10 +226,12 @@ d {
     font-size: 3vh;
     text-align: center;
     justify-content: center;
+    margin-top: 10px;
   }
 
   .skills {
-    width: 80%;
+    max-width: 80%;
+    max-height: 20%;
     margin: auto;
     left: 0;
     bottom: 0;
@@ -233,6 +241,18 @@ d {
     left: auto;
     right: 15%;
     /* bottom: 9%; */
+  } 
+  .companyname{
+    max-width: 20%;
+    max-height: 50%;
+    /* border: 2px solid red; */
+    margin-left: 16px;
+  }
+  .position{
+    margin-top: 10px;
+  }
+  .edit{
+    margin-top: 56px;
   }
   
-}
+ } 
